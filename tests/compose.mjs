@@ -22,5 +22,5 @@ export function compose(api,canonical,bundle,digest){
   let parent=target;for(const k of path.slice(0,-1)){assert.ok(parent[k]&&typeof parent[k]==='object','Missing canonical parent');parent=parent[k];}
   parent[path.at(-1)]=f.form==='array'?[]:f.form==='object'?{}:structuredClone(f.value);
  }
- return new api.Vocabulary(entries,bundle.snapshot);
+ return new api.Vocabulary(entries,bundle.snapshot,bundle.taxonomy);
 }

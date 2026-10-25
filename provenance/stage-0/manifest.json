@@ -1,0 +1,12 @@
+[
+  {
+    "path": "provenance/stage-0/source-provenance.json",
+    "bytes": 8751090,
+    "sha256": "168927e8742d160ae61aa58fbc401cfd56fa045f1817563af4c805171488b394"
+  },
+  {
+    "path": "provenance/stage-0/content-inventory.json",
+    "bytes": 595357,
+    "sha256": "70098d853c2328edb776817d8330319b886e42142d8e4f1dfaa4b079d4afe96b"
+  }
+]

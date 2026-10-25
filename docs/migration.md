@@ -1,3 +1,5 @@
+> Current status: Stage 4B completed editorial ownership cutover. Knowledge is the active editorial source; Core retains canonical vocabulary. See the README for current build/test instructions. The Stage 2 extraction and rollback account below is preserved as historical evidence.
+
 # Stage 2 extraction and rollback
 
 Original content baseline: `bc6060a29223a2a52443ad62f5e566a2114ffcc6`.
