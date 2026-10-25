@@ -1,0 +1,46 @@
+{
+  "counts": {
+    "indexed": 969,
+    "independent": 967,
+    "references": 913,
+    "articles": 911,
+    "sources": 775,
+    "blocks": 2256,
+    "attachments": 1144,
+    "associations": 162,
+    "photos": 349,
+    "observations": 1,
+    "eligible": 0,
+    "recipes": 490,
+    "legacy": 19,
+    "compatibilityRoutes": 16
+  },
+  "compatibilityRoutes": {
+    "ingredient": [
+      {
+        "from": "lemon-juice",
+        "base": "lemon",
+        "parts": [
+          "juice"
+        ]
+      }
+    ],
+    "process": [
+      "move",
+      "open",
+      "close",
+      "use",
+      "wait",
+      "insert",
+      "lift",
+      "slide",
+      "handle",
+      "test",
+      "feed",
+      "retain",
+      "chop-or-shred",
+      "grate-or-slice",
+      "scrape-or-break"
+    ]
+  }
+}

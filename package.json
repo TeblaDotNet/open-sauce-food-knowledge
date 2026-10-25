@@ -1,0 +1,13 @@
+{
+  "name": "@open-sauce/knowledge",
+  "version": "0.1.0-stage-2",
+  "private": true,
+  "type": "module",
+  "engines": {"node": ">=24"},
+  "license": "SEE LICENSE IN LICENSING.md",
+  "scripts": {
+    "build": "node tools/build.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "source:check": "node tools/source-check.mjs"
+  }
+}

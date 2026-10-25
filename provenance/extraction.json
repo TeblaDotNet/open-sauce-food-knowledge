@@ -1,0 +1,3435 @@
+{
+  "schemaVersion": 1,
+  "status": "migration-candidate-core-remains-authority",
+  "coreSourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+  "contractRevision": "cb5922c1c5239d2b126588c3098fc40d94adf9e9",
+  "canonicalDigest": "20f61b876c2d966e04f9b145343297e728bc9cd8488af2f245f326d3c704a046",
+  "stage1Evidence": [
+    {
+      "file": "canonical-projection.json",
+      "sha256": "1679926FCD5BC1AED7E81F2961C60436FC4876F940F66937DFA10EEA4F7BEE17",
+      "equal": true
+    },
+    {
+      "file": "culinary-projection.json",
+      "sha256": "17F2628F538C2B1CB955B51D3EE37F7290EA7D4BD26DD171DECCC10974347FE3",
+      "equal": true
+    },
+    {
+      "file": "ownership-manifest.json",
+      "sha256": "BD2F1BF7B2DB6FC899849C302FDB86294E5DF26CF4FF9E67670560E21947CEA8",
+      "equal": true
+    },
+    {
+      "file": "source-provenance.json",
+      "sha256": "168927E8742D160AE61AA58FBC401CFD56FA045F1817563AF4C805171488B394",
+      "equal": true
+    },
+    {
+      "file": "round-trip.json",
+      "sha256": "69B12EE10383F74EC978832FC817481A56D32439472C4C928A117C4BCCCFD496",
+      "equal": true
+    },
+    {
+      "file": "inventory-comparison.json",
+      "sha256": "C25C3F1C6E4641D39F6C2708F357CC89C2E4466D6A4F88CBD8D45C231A272634",
+      "equal": true
+    },
+    {
+      "file": "unresolved-fields.json",
+      "sha256": "2DC1E1363804397E98C44B096741BB4E80C37EC7D3C0769115DC832820FB13AB",
+      "equal": true
+    },
+    {
+      "file": "status.json",
+      "sha256": "3927E9B9CBFE3688CF61BD44E48AD6225CC76532EB75D970D5C4E723EB1E46F4",
+      "equal": true
+    }
+  ],
+  "counts": {
+    "indexed": 969,
+    "independent": 967,
+    "references": 913,
+    "articles": 911,
+    "sources": 775,
+    "blocks": 2256,
+    "attachments": 1144,
+    "associations": 162,
+    "photos": 349,
+    "observations": 1,
+    "eligible": 0,
+    "recipes": 490,
+    "legacy": 19,
+    "compatibilityRoutes": 16
+  },
+  "files": [
+    {
+      "path": "data/enrichment.json",
+      "sha256": "548a381962d0c52019eba2160c007ddfc46c82796ae899e1ae8233a7520d5e42",
+      "bytes": 1498436,
+      "source": "knowledge/enrichment.yaml",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6"
+    },
+    {
+      "path": "data/resources.json",
+      "sha256": "6588bdbbce9403c9f063509f6bd78c73b12b0d7f1dec513f783b70ba7cb4279b",
+      "bytes": 313676,
+      "source": "knowledge/resources.yaml",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6"
+    },
+    {
+      "path": "data/quantities.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3,
+      "source": "No populated typical_mass/reference_density/nutrition in Stage 0",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6"
+    },
+    {
+      "path": "data/compatibility.json",
+      "sha256": "26ee7b719e5333c9572f09a170e5aa748f4217f0ef7aa5ee49de62182f8b86dd",
+      "bytes": 1194028,
+      "source": "Stage 1 Open Sauce Food-owned fields in mixed canonical YAML",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6"
+    },
+    {
+      "path": "taxonomy/categories.json",
+      "sha256": "e945318e94d7ed7a5869f745268d435d039b0d7c10b303ac4e7a12d9b8a7680b",
+      "bytes": 4667,
+      "source": "src/vocabulary/categories.ts",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6"
+    },
+    {
+      "path": "validation/canonical-manifest.json",
+      "sha256": "e34a0fbfb3bff2296ff9fb4dd906c2c11876fe1f250a6cf6fb4f78b810d1505a",
+      "bytes": 967445,
+      "source": "Stage 1 canonical projection; validation only, never independently edit",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6"
+    },
+    {
+      "path": "validation/baseline.json",
+      "sha256": "beac0f4606e7befc760c553c7ec76491e05ac06b93af29b33fb88c1f0a6ce908",
+      "bytes": 776,
+      "source": "Stage 0/1 inventory",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6"
+    },
+    {
+      "path": "provenance/core/knowledge/enrichment.yaml",
+      "sha256": "d49b4a6751726b69e05dbdf69ece34042683620ca2443b7bcae56f2a3d1f04ef",
+      "bytes": 1215928,
+      "source": "knowledge/enrichment.yaml",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "d49b4a6751726b69e05dbdf69ece34042683620ca2443b7bcae56f2a3d1f04ef"
+    },
+    {
+      "path": "provenance/core/knowledge/resources.yaml",
+      "sha256": "44cd409815a5a73525b4ad6b203c43c8f426b3ca8d74642348e5a4b968058d47",
+      "bytes": 266922,
+      "source": "knowledge/resources.yaml",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "44cd409815a5a73525b4ad6b203c43c8f426b3ca8d74642348e5a4b968058d47"
+    },
+    {
+      "path": "provenance/core/assets/references/selection.json",
+      "sha256": "08ca415da7e15a585a139c454d8583b7ea9d6ed7b138f1af0f8a1c35bff8984c",
+      "bytes": 537623,
+      "source": "assets/references/selection.json",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "08ca415da7e15a585a139c454d8583b7ea9d6ed7b138f1af0f8a1c35bff8984c"
+    },
+    {
+      "path": "provenance/core/LICENSE",
+      "sha256": "65c3209ae621508b7c3a21be574928737a14b04dcc1e08e0f53e058a459d8a11",
+      "bytes": 451,
+      "source": "LICENSE",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "65c3209ae621508b7c3a21be574928737a14b04dcc1e08e0f53e058a459d8a11"
+    },
+    {
+      "path": "provenance/core/LICENSES/Bun-1.4.4.md",
+      "sha256": "ee2abb73c6b90140db5994039a21d32f2e39a5ae063616bdba313dab6e0c5bac",
+      "bytes": 14779,
+      "source": "LICENSES/Bun-1.4.4.md",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "ee2abb73c6b90140db5994039a21d32f2e39a5ae063616bdba313dab6e0c5bac"
+    },
+    {
+      "path": "provenance/core/LICENSES/CC-BY-4.0.txt",
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411",
+      "bytes": 18657,
+      "source": "LICENSES/CC-BY-4.0.txt",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
+    },
+    {
+      "path": "provenance/core/LICENSES/CC0-1.0.txt",
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+      "bytes": 7048,
+      "source": "LICENSES/CC0-1.0.txt",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "path": "provenance/core/LICENSES/GPL-2.0-or-later.txt",
+      "sha256": "edaef632cbb643e4e7a221717a6c441a4c1a7c918e6e4d56debc3d8739b233f6",
+      "bytes": 17984,
+      "source": "LICENSES/GPL-2.0-or-later.txt",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "edaef632cbb643e4e7a221717a6c441a4c1a7c918e6e4d56debc3d8739b233f6"
+    },
+    {
+      "path": "provenance/core/LICENSES/MIT.txt",
+      "sha256": "e334b493ca1900c7cbbb761fb9ee9ce36e3e401b408f344193e2ab845ba98aa1",
+      "bytes": 1095,
+      "source": "LICENSES/MIT.txt",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "e334b493ca1900c7cbbb761fb9ee9ce36e3e401b408f344193e2ab845ba98aa1"
+    },
+    {
+      "path": "provenance/core/LICENSING.md",
+      "sha256": "6627ea113faadc95bedf44bc43ebdfc55e763ab05277dc384a9d83b6d1048ea2",
+      "bytes": 5025,
+      "source": "LICENSING.md",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "6627ea113faadc95bedf44bc43ebdfc55e763ab05277dc384a9d83b6d1048ea2"
+    },
+    {
+      "path": "provenance/core/docs/existing-page-enrichment-batch-1.json",
+      "sha256": "8725cf3263213cd742b142f2a7c65dd821abb2c827eaf2a24f79101080d5d037",
+      "bytes": 160810,
+      "source": "docs/existing-page-enrichment-batch-1.json",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "8725cf3263213cd742b142f2a7c65dd821abb2c827eaf2a24f79101080d5d037"
+    },
+    {
+      "path": "provenance/core/docs/existing-page-enrichment-batch-1.md",
+      "sha256": "f96a52aa368dae1417eb3b1fc80e5ecc58293fb80b0b1a0f5022ec34748404c5",
+      "bytes": 29783,
+      "source": "docs/existing-page-enrichment-batch-1.md",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "f96a52aa368dae1417eb3b1fc80e5ecc58293fb80b0b1a0f5022ec34748404c5"
+    },
+    {
+      "path": "provenance/core/docs/existing-page-enrichment-batch-2.json",
+      "sha256": "14479446ad8878e7682d6a7316f16b893633255c0f958386992f4c2e5d91aa8f",
+      "bytes": 171914,
+      "source": "docs/existing-page-enrichment-batch-2.json",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "14479446ad8878e7682d6a7316f16b893633255c0f958386992f4c2e5d91aa8f"
+    },
+    {
+      "path": "provenance/core/docs/existing-page-enrichment-batch-2.md",
+      "sha256": "bcb023b94c8f78b7dc09d414e1a9bbd1ff39a591e35252992c1905dba929f8b1",
+      "bytes": 30550,
+      "source": "docs/existing-page-enrichment-batch-2.md",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "bcb023b94c8f78b7dc09d414e1a9bbd1ff39a591e35252992c1905dba929f8b1"
+    },
+    {
+      "path": "provenance/core/docs/existing-page-enrichment-batch-3.json",
+      "sha256": "ed642dc44467be84250869d0528ea04dfdf70db3ea575e1cb5ef9d95687731d7",
+      "bytes": 165429,
+      "source": "docs/existing-page-enrichment-batch-3.json",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "ed642dc44467be84250869d0528ea04dfdf70db3ea575e1cb5ef9d95687731d7"
+    },
+    {
+      "path": "provenance/core/docs/existing-page-enrichment-batch-3.md",
+      "sha256": "592b5ccca466b3526024c0d1188cefcb80b1591e10bc792790de9cfa4009b672",
+      "bytes": 29358,
+      "source": "docs/existing-page-enrichment-batch-3.md",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "592b5ccca466b3526024c0d1188cefcb80b1591e10bc792790de9cfa4009b672"
+    },
+    {
+      "path": "provenance/core/docs/existing-page-enrichment-batch-4.json",
+      "sha256": "f26fedb5a870714dca03c9258ce53590e2ae1c4a7cb58e47f7c6e44741ac7694",
+      "bytes": 624048,
+      "source": "docs/existing-page-enrichment-batch-4.json",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "f26fedb5a870714dca03c9258ce53590e2ae1c4a7cb58e47f7c6e44741ac7694"
+    },
+    {
+      "path": "provenance/core/docs/existing-page-enrichment-batch-4.md",
+      "sha256": "883ab239c979b98ebcbb2aee6a9b09242877139946a0313295327b174192ef96",
+      "bytes": 33565,
+      "source": "docs/existing-page-enrichment-batch-4.md",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "883ab239c979b98ebcbb2aee6a9b09242877139946a0313295327b174192ef96"
+    },
+    {
+      "path": "provenance/core/docs/ingredient-enrichment-batch-1.json",
+      "sha256": "88b761478cbecfc02df266f0b2c367165d40e5fb36ac8738aeec1d3cb9681f88",
+      "bytes": 210946,
+      "source": "docs/ingredient-enrichment-batch-1.json",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "88b761478cbecfc02df266f0b2c367165d40e5fb36ac8738aeec1d3cb9681f88"
+    },
+    {
+      "path": "provenance/core/docs/ingredient-enrichment-batch-1.md",
+      "sha256": "c2a89a9f470a8038192073b25585955cd34d850a0e9aaddd3b8fa086e64eee94",
+      "bytes": 34070,
+      "source": "docs/ingredient-enrichment-batch-1.md",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "c2a89a9f470a8038192073b25585955cd34d850a0e9aaddd3b8fa086e64eee94"
+    },
+    {
+      "path": "provenance/core/docs/ingredient-enrichment-batch-2.json",
+      "sha256": "deb64ac6b8145268e027dc3fb6682120f4b245ccdc7906ed959ad7dbd821a640",
+      "bytes": 230067,
+      "source": "docs/ingredient-enrichment-batch-2.json",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "deb64ac6b8145268e027dc3fb6682120f4b245ccdc7906ed959ad7dbd821a640"
+    },
+    {
+      "path": "provenance/core/docs/ingredient-enrichment-batch-2.md",
+      "sha256": "66bbdf00cf5823aef54ba646eac9b04a076c4dc95083e317839da993cfcccc75",
+      "bytes": 46895,
+      "source": "docs/ingredient-enrichment-batch-2.md",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "66bbdf00cf5823aef54ba646eac9b04a076c4dc95083e317839da993cfcccc75"
+    },
+    {
+      "path": "provenance/core/docs/ingredient-enrichment-batch-3.json",
+      "sha256": "0b18ec6185441f2db11097be6e182c8659ffeca49d04ab9fb2dcbccf8cce925e",
+      "bytes": 239574,
+      "source": "docs/ingredient-enrichment-batch-3.json",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "0b18ec6185441f2db11097be6e182c8659ffeca49d04ab9fb2dcbccf8cce925e"
+    },
+    {
+      "path": "provenance/core/docs/ingredient-enrichment-batch-3.md",
+      "sha256": "48f891342fb7e4496d80c904abd83e6e931951e9110d669698083da48267d4f4",
+      "bytes": 59873,
+      "source": "docs/ingredient-enrichment-batch-3.md",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "48f891342fb7e4496d80c904abd83e6e931951e9110d669698083da48267d4f4"
+    },
+    {
+      "path": "provenance/core/docs/ingredient-enrichment-batch-4.json",
+      "sha256": "8933a9787edd2f61d599d530fdd01e8ae18570dfda1e7d7c9808930c36750659",
+      "bytes": 213757,
+      "source": "docs/ingredient-enrichment-batch-4.json",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "8933a9787edd2f61d599d530fdd01e8ae18570dfda1e7d7c9808930c36750659"
+    },
+    {
+      "path": "provenance/core/docs/ingredient-enrichment-batch-4.md",
+      "sha256": "403d8b5127014bd8df1245cf2b8564a9984b9c515a6cb9b1d3e0c0379564feec",
+      "bytes": 58717,
+      "source": "docs/ingredient-enrichment-batch-4.md",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "403d8b5127014bd8df1245cf2b8564a9984b9c515a6cb9b1d3e0c0379564feec"
+    },
+    {
+      "path": "provenance/core/docs/ingredient-enrichment-batch-5.json",
+      "sha256": "a877ee10fda2ce960011b033e0f885e29cb32dd23630f2c22159a26caed6b17d",
+      "bytes": 174392,
+      "source": "docs/ingredient-enrichment-batch-5.json",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "a877ee10fda2ce960011b033e0f885e29cb32dd23630f2c22159a26caed6b17d"
+    },
+    {
+      "path": "provenance/core/docs/ingredient-enrichment-batch-5.md",
+      "sha256": "fceab2495de2c43bf0e975536aba7890df694909d01cb2bcf1fcf774b3910904",
+      "bytes": 37959,
+      "source": "docs/ingredient-enrichment-batch-5.md",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "fceab2495de2c43bf0e975536aba7890df694909d01cb2bcf1fcf774b3910904"
+    },
+    {
+      "path": "provenance/core/docs/knowledge-images-batch-1.json",
+      "sha256": "606edec5bb461c179b2659a5ac1aedd11925a72099e69e27c64f8ed673c32939",
+      "bytes": 247244,
+      "source": "docs/knowledge-images-batch-1.json",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "606edec5bb461c179b2659a5ac1aedd11925a72099e69e27c64f8ed673c32939"
+    },
+    {
+      "path": "provenance/core/docs/knowledge-images-batch-1.md",
+      "sha256": "eb4361eb597d89ab585b61b6a83a9e092260770fb5a539accb4b12dad7187138",
+      "bytes": 9336,
+      "source": "docs/knowledge-images-batch-1.md",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "eb4361eb597d89ab585b61b6a83a9e092260770fb5a539accb4b12dad7187138"
+    },
+    {
+      "path": "provenance/core/docs/knowledge-images-batch-2.json",
+      "sha256": "9b5950cda613365b7aa0ee3e5aa321ecf8f33b7f37ce8e77bfbe6b8cb9343f92",
+      "bytes": 582389,
+      "source": "docs/knowledge-images-batch-2.json",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "9b5950cda613365b7aa0ee3e5aa321ecf8f33b7f37ce8e77bfbe6b8cb9343f92"
+    },
+    {
+      "path": "provenance/core/docs/knowledge-images-batch-2.md",
+      "sha256": "53737917c6ccb2a929dbcf2c3fe475483b57786a162f6ae7ed7ab350f4fc11b1",
+      "bytes": 22030,
+      "source": "docs/knowledge-images-batch-2.md",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "53737917c6ccb2a929dbcf2c3fe475483b57786a162f6ae7ed7ab350f4fc11b1"
+    },
+    {
+      "path": "provenance/core/docs/knowledge-images-batch-3.json",
+      "sha256": "5cd80961895490aa1e8c5c40295622db929200db5ae6990b9549deff06719395",
+      "bytes": 572078,
+      "source": "docs/knowledge-images-batch-3.json",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "5cd80961895490aa1e8c5c40295622db929200db5ae6990b9549deff06719395"
+    },
+    {
+      "path": "provenance/core/docs/knowledge-images-batch-3.md",
+      "sha256": "0f4fc5fa5f50a1baccfef0496f91ab4d3c7ee775a7aa147fa1c5a2622a622f50",
+      "bytes": 22143,
+      "source": "docs/knowledge-images-batch-3.md",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "0f4fc5fa5f50a1baccfef0496f91ab4d3c7ee775a7aa147fa1c5a2622a622f50"
+    },
+    {
+      "path": "provenance/core/docs/knowledge-images-batch-4.json",
+      "sha256": "15320c385ac9ffb224eb1efd94e82a7e5a1da9381d3d27482385b5d151c1818c",
+      "bytes": 557763,
+      "source": "docs/knowledge-images-batch-4.json",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "15320c385ac9ffb224eb1efd94e82a7e5a1da9381d3d27482385b5d151c1818c"
+    },
+    {
+      "path": "provenance/core/docs/knowledge-images-batch-4.md",
+      "sha256": "2d7c54bf24792d2d624b6b15fb7612a13c96b07a24bbd15cc55d6f5a97615807",
+      "bytes": 22282,
+      "source": "docs/knowledge-images-batch-4.md",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "2d7c54bf24792d2d624b6b15fb7612a13c96b07a24bbd15cc55d6f5a97615807"
+    },
+    {
+      "path": "provenance/core/docs/knowledge.md",
+      "sha256": "fa3e984d0edad5cc57e0903ba3c92b1e5e7fbfedf94bf5ca1d87130e45ac451d",
+      "bytes": 19168,
+      "source": "docs/knowledge.md",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "fa3e984d0edad5cc57e0903ba3c92b1e5e7fbfedf94bf5ca1d87130e45ac451d"
+    },
+    {
+      "path": "provenance/core/docs/processes-equipment-batch-2-decisions.json",
+      "sha256": "0e17e78b966eeedf6b90fa84b23994245d4c0c45dcc4098f2abf061957c65abc",
+      "bytes": 33864,
+      "source": "docs/processes-equipment-batch-2-decisions.json",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "0e17e78b966eeedf6b90fa84b23994245d4c0c45dcc4098f2abf061957c65abc"
+    },
+    {
+      "path": "provenance/core/docs/processes-equipment-batch-2.md",
+      "sha256": "0beaaf298f2c7e3151b74006c0c30e18d26f78e58dd8b33f9b63a6ef7a13a446",
+      "bytes": 30163,
+      "source": "docs/processes-equipment-batch-2.md",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "0beaaf298f2c7e3151b74006c0c30e18d26f78e58dd8b33f9b63a6ef7a13a446"
+    },
+    {
+      "path": "provenance/core/docs/processes-equipment-batch-3-decisions.json",
+      "sha256": "3e66831f7dcca9b62390f248d46b0925089e8e2dbd52e88e0d244b5b4b6f8a25",
+      "bytes": 29072,
+      "source": "docs/processes-equipment-batch-3-decisions.json",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "3e66831f7dcca9b62390f248d46b0925089e8e2dbd52e88e0d244b5b4b6f8a25"
+    },
+    {
+      "path": "provenance/core/docs/processes-equipment-batch-3.md",
+      "sha256": "da8554d7ccc01cc690d2447fa8bd541c5946f5781bb4da398b2d18173e452919",
+      "bytes": 25347,
+      "source": "docs/processes-equipment-batch-3.md",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "da8554d7ccc01cc690d2447fa8bd541c5946f5781bb4da398b2d18173e452919"
+    },
+    {
+      "path": "provenance/core/docs/processes-equipment-batch-4-decisions.json",
+      "sha256": "284c6b6547f55ae530ff1f21866ee3ea6e67c6dd5f684cb6e93cafe5c14d751e",
+      "bytes": 31223,
+      "source": "docs/processes-equipment-batch-4-decisions.json",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "284c6b6547f55ae530ff1f21866ee3ea6e67c6dd5f684cb6e93cafe5c14d751e"
+    },
+    {
+      "path": "provenance/core/docs/processes-equipment-batch-4.md",
+      "sha256": "e107da6e94ce6a26d80910fa4e773e1324a33c850ea33a906d52ede1e9c71ad6",
+      "bytes": 26214,
+      "source": "docs/processes-equipment-batch-4.md",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "e107da6e94ce6a26d80910fa4e773e1324a33c850ea33a906d52ede1e9c71ad6"
+    },
+    {
+      "path": "provenance/core/docs/processes-equipment-batch-5-decisions.json",
+      "sha256": "f5f480c516b416c2285735d07cd448d08a62f346d64f71fd0035038527c7b4c3",
+      "bytes": 29168,
+      "source": "docs/processes-equipment-batch-5-decisions.json",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "f5f480c516b416c2285735d07cd448d08a62f346d64f71fd0035038527c7b4c3"
+    },
+    {
+      "path": "provenance/core/docs/processes-equipment-batch-5.md",
+      "sha256": "da1af0e39ad42b849364e4960f1f0b9a958de89db135340dbd786c926a02882a",
+      "bytes": 22406,
+      "source": "docs/processes-equipment-batch-5.md",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "da1af0e39ad42b849364e4960f1f0b9a958de89db135340dbd786c926a02882a"
+    },
+    {
+      "path": "provenance/core/docs/processes-equipment-batch-6-decisions.json",
+      "sha256": "2979297143ac18bbc1e6468bcd92d4763babc0e8acaa80c7376deb193361a045",
+      "bytes": 30387,
+      "source": "docs/processes-equipment-batch-6-decisions.json",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "2979297143ac18bbc1e6468bcd92d4763babc0e8acaa80c7376deb193361a045"
+    },
+    {
+      "path": "provenance/core/docs/processes-equipment-batch-6.md",
+      "sha256": "95039b0bd1b28c560c60ce2d86005daaf2b6ec2ed1031f7be257ce43d62938c9",
+      "bytes": 23023,
+      "source": "docs/processes-equipment-batch-6.md",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "95039b0bd1b28c560c60ce2d86005daaf2b6ec2ed1031f7be257ce43d62938c9"
+    },
+    {
+      "path": "provenance/core/docs/processes-equipment-batch-7-decisions.json",
+      "sha256": "a83b2be20c02215e122da31e335b7cc13b8158e954d222c5b99d966ce7a89704",
+      "bytes": 29369,
+      "source": "docs/processes-equipment-batch-7-decisions.json",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "a83b2be20c02215e122da31e335b7cc13b8158e954d222c5b99d966ce7a89704"
+    },
+    {
+      "path": "provenance/core/docs/processes-equipment-batch-7.md",
+      "sha256": "5a7e65031bdb6a61f2585ef7155364ec04e160fb8924acabe086d81c38206ec1",
+      "bytes": 21802,
+      "source": "docs/processes-equipment-batch-7.md",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "5a7e65031bdb6a61f2585ef7155364ec04e160fb8924acabe086d81c38206ec1"
+    },
+    {
+      "path": "provenance/core/docs/processes-equipment-batches-2-7-summary.md",
+      "sha256": "45d848d422a5836c4cb10c5dd4334478ca6377d0ea47ef8391c5dcb76c13ef2c",
+      "bytes": 9261,
+      "source": "docs/processes-equipment-batches-2-7-summary.md",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "45d848d422a5836c4cb10c5dd4334478ca6377d0ea47ef8391c5dcb76c13ef2c"
+    },
+    {
+      "path": "provenance/core/docs/processes-equipment-v1-decisions.json",
+      "sha256": "da4962845adf66f3fd459522052c88231e7669533201d21296e235499337ddb6",
+      "bytes": 110683,
+      "source": "docs/processes-equipment-v1-decisions.json",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "da4962845adf66f3fd459522052c88231e7669533201d21296e235499337ddb6"
+    },
+    {
+      "path": "provenance/core/docs/processes-equipment-v1-gaps.json",
+      "sha256": "bdd470ae788a285fda8314bb181170afe302d6f9619389debc722382fcbc6686",
+      "bytes": 11723,
+      "source": "docs/processes-equipment-v1-gaps.json",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "bdd470ae788a285fda8314bb181170afe302d6f9619389debc722382fcbc6686"
+    },
+    {
+      "path": "provenance/core/docs/processes-equipment-v1.md",
+      "sha256": "2e614c3216551202a939fe5db2c69d8e84bd88d482c3269370bede0fbf0b1bb8",
+      "bytes": 11636,
+      "source": "docs/processes-equipment-v1.md",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "2e614c3216551202a939fe5db2c69d8e84bd88d482c3269370bede0fbf0b1bb8"
+    },
+    {
+      "path": "provenance/core/docs/vocabulary-quality-v1-batch-1-decisions.json",
+      "sha256": "8175aeff5ae7168a60f64228efa5a89953a2860a392fd7eb7b523178bf5984af",
+      "bytes": 30245,
+      "source": "docs/vocabulary-quality-v1-batch-1-decisions.json",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "8175aeff5ae7168a60f64228efa5a89953a2860a392fd7eb7b523178bf5984af"
+    },
+    {
+      "path": "provenance/core/docs/vocabulary-quality-v1-batch-1.md",
+      "sha256": "f7fdbbb0052612118fae44e9e95232ad025e8e61fd5a5b12b8d39e97a0f9c0c7",
+      "bytes": 30845,
+      "source": "docs/vocabulary-quality-v1-batch-1.md",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "f7fdbbb0052612118fae44e9e95232ad025e8e61fd5a5b12b8d39e97a0f9c0c7"
+    },
+    {
+      "path": "provenance/core/knowledge/equipment/README.md",
+      "sha256": "73ee3a073be70e5faaa578e9019815f8dde422702214675f15ea5e30300ffcf8",
+      "bytes": 177,
+      "source": "knowledge/equipment/README.md",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "73ee3a073be70e5faaa578e9019815f8dde422702214675f15ea5e30300ffcf8"
+    },
+    {
+      "path": "provenance/core/knowledge/ingredients/README.md",
+      "sha256": "94ab2fe03bde667d21ec921243cabc6ec544f70f7ad3a2919ce55c5203f6c341",
+      "bytes": 179,
+      "source": "knowledge/ingredients/README.md",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "94ab2fe03bde667d21ec921243cabc6ec544f70f7ad3a2919ce55c5203f6c341"
+    },
+    {
+      "path": "provenance/core/knowledge/processes/README.md",
+      "sha256": "6a1d3d4b7d45e0548ce3e6014504d6740da9561ed6e2fde50235d0a4b6683ac7",
+      "bytes": 177,
+      "source": "knowledge/processes/README.md",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "6a1d3d4b7d45e0548ce3e6014504d6740da9561ed6e2fde50235d0a4b6683ac7"
+    },
+    {
+      "path": "provenance/core/src/reference/index.ts",
+      "sha256": "91541c445f0874f24f0c61c141b017148bd55dae12ea38863089f4be8c24a9a8",
+      "bytes": 10789,
+      "source": "src/reference/index.ts",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "91541c445f0874f24f0c61c141b017148bd55dae12ea38863089f4be8c24a9a8"
+    },
+    {
+      "path": "provenance/core/src/vocabulary/categories.ts",
+      "sha256": "48262fc4fe39b94f0f58ac8d629023ef61d6c4dcdf2fd00d2ef778b1686429c3",
+      "bytes": 4860,
+      "source": "src/vocabulary/categories.ts",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "48262fc4fe39b94f0f58ac8d629023ef61d6c4dcdf2fd00d2ef778b1686429c3"
+    },
+    {
+      "path": "assets/references/ATTRIBUTION.md",
+      "sha256": "917e62362c070be2c79bf089b4107bec557ea6e32c803fb343d7bdaad9c04d60",
+      "bytes": 131097,
+      "source": "assets/references/ATTRIBUTION.md",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "917e62362c070be2c79bf089b4107bec557ea6e32c803fb343d7bdaad9c04d60"
+    },
+    {
+      "path": "assets/references/absinthe.jpg",
+      "sha256": "435a10ab140615c42f83f01509203e082da2e72a8c8dc1f005a521beb790e9ef",
+      "bytes": 42845,
+      "source": "assets/references/absinthe.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "435a10ab140615c42f83f01509203e082da2e72a8c8dc1f005a521beb790e9ef"
+    },
+    {
+      "path": "assets/references/agave.jpg",
+      "sha256": "b24b792820b0cf79e6b5412d57acbda92ac45135ef1d5a634418a79dfbe283f4",
+      "bytes": 104151,
+      "source": "assets/references/agave.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "b24b792820b0cf79e6b5412d57acbda92ac45135ef1d5a634418a79dfbe283f4"
+    },
+    {
+      "path": "assets/references/air-fryer.jpg",
+      "sha256": "1a05cd08bf93dee8b04995ca36f480c1541f18671dfa483919be78bfb9567102",
+      "bytes": 146122,
+      "source": "assets/references/air-fryer.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "1a05cd08bf93dee8b04995ca36f480c1541f18671dfa483919be78bfb9567102"
+    },
+    {
+      "path": "assets/references/allspice.jpg",
+      "sha256": "eb87a8b6d1ede48fd37dba23570e7a2ec91c435162664b287f639830adbaeaf8",
+      "bytes": 124943,
+      "source": "assets/references/allspice.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "eb87a8b6d1ede48fd37dba23570e7a2ec91c435162664b287f639830adbaeaf8"
+    },
+    {
+      "path": "assets/references/almonds.jpg",
+      "sha256": "0e69d1c439bc4d1e14d583fb13de48f63340c974ce8101eab40594abdcb4a331",
+      "bytes": 96820,
+      "source": "assets/references/almonds.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "0e69d1c439bc4d1e14d583fb13de48f63340c974ce8101eab40594abdcb4a331"
+    },
+    {
+      "path": "assets/references/aluminium-foil.jpg",
+      "sha256": "b5574c7c38bc8e319481a487758d509f93f5251f7e78d942219a34a3a50c5771",
+      "bytes": 65232,
+      "source": "assets/references/aluminium-foil.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "b5574c7c38bc8e319481a487758d509f93f5251f7e78d942219a34a3a50c5771"
+    },
+    {
+      "path": "assets/references/amaro.jpg",
+      "sha256": "eff4e74fb55f974032621773d0203f9b03278df7478a3740e42cd94b3ba40c4e",
+      "bytes": 128772,
+      "source": "assets/references/amaro.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "eff4e74fb55f974032621773d0203f9b03278df7478a3740e42cd94b3ba40c4e"
+    },
+    {
+      "path": "assets/references/apple-corer.jpg",
+      "sha256": "7350b22b40900afa63feb3f0381e98ab6ac29ef018fe47dbd3e5e9462e1f9bf1",
+      "bytes": 59269,
+      "source": "assets/references/apple-corer.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "7350b22b40900afa63feb3f0381e98ab6ac29ef018fe47dbd3e5e9462e1f9bf1"
+    },
+    {
+      "path": "assets/references/apple-juice.jpg",
+      "sha256": "3bf89184e1b075bad8fba0954a73a42d92c26466407fe88bc4c28d5b7820d1c0",
+      "bytes": 56544,
+      "source": "assets/references/apple-juice.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "3bf89184e1b075bad8fba0954a73a42d92c26466407fe88bc4c28d5b7820d1c0"
+    },
+    {
+      "path": "assets/references/apple.jpg",
+      "sha256": "ce11b398dab92235e6670966eededefe7ac7639aa015796bc61948ce04588332",
+      "bytes": 122754,
+      "source": "assets/references/apple.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "ce11b398dab92235e6670966eededefe7ac7639aa015796bc61948ce04588332"
+    },
+    {
+      "path": "assets/references/artichoke.jpg",
+      "sha256": "f5013c8d547a85047db173913001224ff65a97040faf2f62309688facf9a06e2",
+      "bytes": 106566,
+      "source": "assets/references/artichoke.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "f5013c8d547a85047db173913001224ff65a97040faf2f62309688facf9a06e2"
+    },
+    {
+      "path": "assets/references/arugula.jpg",
+      "sha256": "04c1c7d3a767e68bf024abd16b5d88573d699d14c0765c1db0ae0d86d76421a8",
+      "bytes": 171625,
+      "source": "assets/references/arugula.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "04c1c7d3a767e68bf024abd16b5d88573d699d14c0765c1db0ae0d86d76421a8"
+    },
+    {
+      "path": "assets/references/asparagus.jpg",
+      "sha256": "ced2d45ca241d6af8810b07c82c5d94dc02b9f8b208c46a3274e852c2367716f",
+      "bytes": 54125,
+      "source": "assets/references/asparagus.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "ced2d45ca241d6af8810b07c82c5d94dc02b9f8b208c46a3274e852c2367716f"
+    },
+    {
+      "path": "assets/references/aubergine.jpg",
+      "sha256": "b4edae64c8a4fc0bb23be0d8ff69dcc5a798bfdfc911215d181dc37b7daddcc6",
+      "bytes": 57512,
+      "source": "assets/references/aubergine.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "b4edae64c8a4fc0bb23be0d8ff69dcc5a798bfdfc911215d181dc37b7daddcc6"
+    },
+    {
+      "path": "assets/references/avocado.jpg",
+      "sha256": "d075f641ff1c16397fae7756f5bc9ad41e762ccf68817b958b54053130d09023",
+      "bytes": 84930,
+      "source": "assets/references/avocado.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "d075f641ff1c16397fae7756f5bc9ad41e762ccf68817b958b54053130d09023"
+    },
+    {
+      "path": "assets/references/bacon.jpg",
+      "sha256": "2b275c4429c1be61a71ea91f9171ec1e7bb941fac8c65b339f67b04f3a84e124",
+      "bytes": 30527,
+      "source": "assets/references/bacon.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "2b275c4429c1be61a71ea91f9171ec1e7bb941fac8c65b339f67b04f3a84e124"
+    },
+    {
+      "path": "assets/references/baguette.jpg",
+      "sha256": "0c39c0bf01c9dc27e95dc61af717353a191e17c045b8392e3419c9d40ea53b8c",
+      "bytes": 180993,
+      "source": "assets/references/baguette.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "0c39c0bf01c9dc27e95dc61af717353a191e17c045b8392e3419c9d40ea53b8c"
+    },
+    {
+      "path": "assets/references/baking-paper.jpg",
+      "sha256": "a09902e35fdb07dba82322e632222455ef79df206376f41df3f4e1f0c8e1acbc",
+      "bytes": 29128,
+      "source": "assets/references/baking-paper.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "a09902e35fdb07dba82322e632222455ef79df206376f41df3f4e1f0c8e1acbc"
+    },
+    {
+      "path": "assets/references/baking-powder.jpg",
+      "sha256": "92e19bf109c5558a88e89b7e04791014a74e0d4a2535abee0ad5bcd00fc443ec",
+      "bytes": 138718,
+      "source": "assets/references/baking-powder.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "92e19bf109c5558a88e89b7e04791014a74e0d4a2535abee0ad5bcd00fc443ec"
+    },
+    {
+      "path": "assets/references/balsamic-vinegar.jpg",
+      "sha256": "b341e348236a21c2cf36e3e342073921a0dba8185d6f415c5836aa4827388dd5",
+      "bytes": 44582,
+      "source": "assets/references/balsamic-vinegar.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "b341e348236a21c2cf36e3e342073921a0dba8185d6f415c5836aa4827388dd5"
+    },
+    {
+      "path": "assets/references/bamboo-steamer.jpg",
+      "sha256": "7bc40a9441a0ada83ec115887914e1e7c7bd20628a4ef9baadec5b967965116f",
+      "bytes": 146624,
+      "source": "assets/references/bamboo-steamer.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "7bc40a9441a0ada83ec115887914e1e7c7bd20628a4ef9baadec5b967965116f"
+    },
+    {
+      "path": "assets/references/banana.jpg",
+      "sha256": "007ac72246715f05963daa01478053905abfd12f46e86d42331afe4bd5ae40f6",
+      "bytes": 57069,
+      "source": "assets/references/banana.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "007ac72246715f05963daa01478053905abfd12f46e86d42331afe4bd5ae40f6"
+    },
+    {
+      "path": "assets/references/basil.jpg",
+      "sha256": "ffdd3e87cd98f401f86b343af4beb38ec803b6ae5b5ec8fb12f7a3e2725e8ea1",
+      "bytes": 134846,
+      "source": "assets/references/basil.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "ffdd3e87cd98f401f86b343af4beb38ec803b6ae5b5ec8fb12f7a3e2725e8ea1"
+    },
+    {
+      "path": "assets/references/bay-leaf.jpg",
+      "sha256": "54f2c7ad65076555c041119d4f90d0e1c655bf8b52d34b1827aaeecb4969742c",
+      "bytes": 100108,
+      "source": "assets/references/bay-leaf.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "54f2c7ad65076555c041119d4f90d0e1c655bf8b52d34b1827aaeecb4969742c"
+    },
+    {
+      "path": "assets/references/bechamel.jpg",
+      "sha256": "49c90a2264112f05320604f0e8bf7a748093222f31d1474f7219872659675a2b",
+      "bytes": 111092,
+      "source": "assets/references/bechamel.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "49c90a2264112f05320604f0e8bf7a748093222f31d1474f7219872659675a2b"
+    },
+    {
+      "path": "assets/references/beef-brisket.jpg",
+      "sha256": "a7d497a1d428c43e45452dda65f1f95c5de4b0875715007a633e7f6a14db952d",
+      "bytes": 215341,
+      "source": "assets/references/beef-brisket.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "a7d497a1d428c43e45452dda65f1f95c5de4b0875715007a633e7f6a14db952d"
+    },
+    {
+      "path": "assets/references/beef.jpg",
+      "sha256": "cd5892978badc8f9f4f7aad6207909f587d04e875b2674dcc7a3a1258615251c",
+      "bytes": 79955,
+      "source": "assets/references/beef.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "cd5892978badc8f9f4f7aad6207909f587d04e875b2674dcc7a3a1258615251c"
+    },
+    {
+      "path": "assets/references/beer.jpg",
+      "sha256": "b7c07de0dffb7493153ecb03a12d67c28b81299ecd47e22261a10a8ba842dc8a",
+      "bytes": 104278,
+      "source": "assets/references/beer.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "b7c07de0dffb7493153ecb03a12d67c28b81299ecd47e22261a10a8ba842dc8a"
+    },
+    {
+      "path": "assets/references/beetroot.jpg",
+      "sha256": "f75f7aeaf43d0ec802fb5da3f1a5612786fa4e11e64eb53cfc72ed2af6c5b0bc",
+      "bytes": 217621,
+      "source": "assets/references/beetroot.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "f75f7aeaf43d0ec802fb5da3f1a5612786fa4e11e64eb53cfc72ed2af6c5b0bc"
+    },
+    {
+      "path": "assets/references/black-pepper.jpg",
+      "sha256": "c02ae9c83822779c47efbe03e41ded316d4c7d28547b575623d1d59b2f787b5d",
+      "bytes": 94734,
+      "source": "assets/references/black-pepper.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "c02ae9c83822779c47efbe03e41ded316d4c7d28547b575623d1d59b2f787b5d"
+    },
+    {
+      "path": "assets/references/black-tea.jpg",
+      "sha256": "04edcc5788baba346b4f47bc7eb4d8d73a7cfad21e94d0d876d26092bfc3e363",
+      "bytes": 50349,
+      "source": "assets/references/black-tea.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "04edcc5788baba346b4f47bc7eb4d8d73a7cfad21e94d0d876d26092bfc3e363"
+    },
+    {
+      "path": "assets/references/blanch.jpg",
+      "sha256": "a25d93e849937a8ac8f19f2941b71850c785b7e3976967ace2227e1e2acd461b",
+      "bytes": 172400,
+      "source": "assets/references/blanch.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "a25d93e849937a8ac8f19f2941b71850c785b7e3976967ace2227e1e2acd461b"
+    },
+    {
+      "path": "assets/references/blowtorch.jpg",
+      "sha256": "7552d24a2510ef4b18fa33762506960c0239162c3dfc270ae869910798cbe251",
+      "bytes": 145180,
+      "source": "assets/references/blowtorch.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "7552d24a2510ef4b18fa33762506960c0239162c3dfc270ae869910798cbe251"
+    },
+    {
+      "path": "assets/references/blueberries.jpg",
+      "sha256": "9993e8f751ac0a22b9d2ffb3df23562dc2beb03c2338fd7a2b2b38f87fc55cdf",
+      "bytes": 31002,
+      "source": "assets/references/blueberries.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "9993e8f751ac0a22b9d2ffb3df23562dc2beb03c2338fd7a2b2b38f87fc55cdf"
+    },
+    {
+      "path": "assets/references/bouillon-cube.jpg",
+      "sha256": "4f1195e2803b800df19764527293ce4ee04d1965d831463701fc09e699bc243f",
+      "bytes": 116621,
+      "source": "assets/references/bouillon-cube.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "4f1195e2803b800df19764527293ce4ee04d1965d831463701fc09e699bc243f"
+    },
+    {
+      "path": "assets/references/bourbon.jpg",
+      "sha256": "ab4201bf0dbb42381936de71363be65de5f6eab62bc652dcca7d378efe1a2954",
+      "bytes": 222558,
+      "source": "assets/references/bourbon.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "ab4201bf0dbb42381936de71363be65de5f6eab62bc652dcca7d378efe1a2954"
+    },
+    {
+      "path": "assets/references/brandy.jpg",
+      "sha256": "4661e55652018d132b5804adc235be7739aa8591e1623fafc34a23c14a809b23",
+      "bytes": 63863,
+      "source": "assets/references/brandy.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "4661e55652018d132b5804adc235be7739aa8591e1623fafc34a23c14a809b23"
+    },
+    {
+      "path": "assets/references/bread-crumbs.jpg",
+      "sha256": "d2c1da1ce74821a91cbb5718bf2e2a6967e22b9c2bcaa035d136e5f74019f3e6",
+      "bytes": 125849,
+      "source": "assets/references/bread-crumbs.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "d2c1da1ce74821a91cbb5718bf2e2a6967e22b9c2bcaa035d136e5f74019f3e6"
+    },
+    {
+      "path": "assets/references/bread-knife.jpg",
+      "sha256": "402aaefec67bfd9e0b7b79ae6f007a2aa3f010a77dd9a9222602c2a0847f3e72",
+      "bytes": 32200,
+      "source": "assets/references/bread-knife.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "402aaefec67bfd9e0b7b79ae6f007a2aa3f010a77dd9a9222602c2a0847f3e72"
+    },
+    {
+      "path": "assets/references/bread-lame.jpg",
+      "sha256": "0607ada827f5fa9b35d00dec6cd3174d06572dc7bed62068a01da8dc5f02f1ef",
+      "bytes": 40843,
+      "source": "assets/references/bread-lame.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "0607ada827f5fa9b35d00dec6cd3174d06572dc7bed62068a01da8dc5f02f1ef"
+    },
+    {
+      "path": "assets/references/broccoli.jpg",
+      "sha256": "d76815d95a0a5e14f7627e1fb67a3364f86d12d82a69b2aa8529cbca183aaca8",
+      "bytes": 123092,
+      "source": "assets/references/broccoli.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "d76815d95a0a5e14f7627e1fb67a3364f86d12d82a69b2aa8529cbca183aaca8"
+    },
+    {
+      "path": "assets/references/brown-sugar.jpg",
+      "sha256": "249a3ff3f8fabb6e2b9bd813cd3a0d72e790448361c099ee1bbf259420c20733",
+      "bytes": 225502,
+      "source": "assets/references/brown-sugar.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "249a3ff3f8fabb6e2b9bd813cd3a0d72e790448361c099ee1bbf259420c20733"
+    },
+    {
+      "path": "assets/references/buckwheat.jpg",
+      "sha256": "b9c9b92868148bf59acb1e82641fcaa3e5e04806d29862502756e4e734e48797",
+      "bytes": 183939,
+      "source": "assets/references/buckwheat.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "b9c9b92868148bf59acb1e82641fcaa3e5e04806d29862502756e4e734e48797"
+    },
+    {
+      "path": "assets/references/butter-knife.jpg",
+      "sha256": "cd88b983288b64d1546f75e4b8e2fa6126f730f1900f3fac054775da9b546b09",
+      "bytes": 91522,
+      "source": "assets/references/butter-knife.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "cd88b983288b64d1546f75e4b8e2fa6126f730f1900f3fac054775da9b546b09"
+    },
+    {
+      "path": "assets/references/butter.jpg",
+      "sha256": "7415846b7cd5184c32f424bb53e834745dbdeb59bdda146a76c5a464f0fac3f6",
+      "bytes": 101710,
+      "source": "assets/references/butter.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "7415846b7cd5184c32f424bb53e834745dbdeb59bdda146a76c5a464f0fac3f6"
+    },
+    {
+      "path": "assets/references/buttermilk.jpg",
+      "sha256": "3b5bebaeac64a0555b5a3043e4c113cbd1f71d7176e3c9f88ac7cc12fb3eba6c",
+      "bytes": 68055,
+      "source": "assets/references/buttermilk.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "3b5bebaeac64a0555b5a3043e4c113cbd1f71d7176e3c9f88ac7cc12fb3eba6c"
+    },
+    {
+      "path": "assets/references/butternut-squash.jpg",
+      "sha256": "a1fc4e6fbb5499546bad31ee401ae5b3caeee56a7a1d9392514452e91851d980",
+      "bytes": 221828,
+      "source": "assets/references/butternut-squash.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "a1fc4e6fbb5499546bad31ee401ae5b3caeee56a7a1d9392514452e91851d980"
+    },
+    {
+      "path": "assets/references/cabbage.jpg",
+      "sha256": "cfd8635ef76844cb72a9f2f87f9331546bb386bf8bc9fd3b9c1e0d46c5a2f9b0",
+      "bytes": 118839,
+      "source": "assets/references/cabbage.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "cfd8635ef76844cb72a9f2f87f9331546bb386bf8bc9fd3b9c1e0d46c5a2f9b0"
+    },
+    {
+      "path": "assets/references/can-opener.jpg",
+      "sha256": "6fc97fcaae2cabfbe2d5b3199a7538d09ed5d0111c5754267922de1f7bd26ff5",
+      "bytes": 58902,
+      "source": "assets/references/can-opener.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "6fc97fcaae2cabfbe2d5b3199a7538d09ed5d0111c5754267922de1f7bd26ff5"
+    },
+    {
+      "path": "assets/references/cannellini-beans.jpg",
+      "sha256": "065221aeaa198027a2474c51b1197658a6fa6bd093797014a1d2d58bc2fdf966",
+      "bytes": 76502,
+      "source": "assets/references/cannellini-beans.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "065221aeaa198027a2474c51b1197658a6fa6bd093797014a1d2d58bc2fdf966"
+    },
+    {
+      "path": "assets/references/caraway.jpg",
+      "sha256": "f95910103a767e4b63fcb2c812476e93dbaad3fe8912a5da908749af42a651ce",
+      "bytes": 54365,
+      "source": "assets/references/caraway.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "f95910103a767e4b63fcb2c812476e93dbaad3fe8912a5da908749af42a651ce"
+    },
+    {
+      "path": "assets/references/cardamom.jpg",
+      "sha256": "b8a0d2a7812195d417452b4bf7fdbd38e9ca567ff3a8fae51031c22add1b169f",
+      "bytes": 121900,
+      "source": "assets/references/cardamom.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "b8a0d2a7812195d417452b4bf7fdbd38e9ca567ff3a8fae51031c22add1b169f"
+    },
+    {
+      "path": "assets/references/carrot.jpg",
+      "sha256": "1c2cab07497766d31d1543289b511b130b404f42212183acdec8a5f9442235a2",
+      "bytes": 201686,
+      "source": "assets/references/carrot.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "1c2cab07497766d31d1543289b511b130b404f42212183acdec8a5f9442235a2"
+    },
+    {
+      "path": "assets/references/celeriac.jpg",
+      "sha256": "73b06db3d750f0a88675f15d9076ff12d8d93df3ed93ea66b123061def61fd6d",
+      "bytes": 108780,
+      "source": "assets/references/celeriac.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "73b06db3d750f0a88675f15d9076ff12d8d93df3ed93ea66b123061def61fd6d"
+    },
+    {
+      "path": "assets/references/celery-seed.jpg",
+      "sha256": "4bc0ea4c8c0cdaa81a3fc92b122bb65754472085837960f51342e356b324e069",
+      "bytes": 130026,
+      "source": "assets/references/celery-seed.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "4bc0ea4c8c0cdaa81a3fc92b122bb65754472085837960f51342e356b324e069"
+    },
+    {
+      "path": "assets/references/celery.jpg",
+      "sha256": "c33f630a023454e6f3598b91db036664566abeaced7f719bda1339d85e900038",
+      "bytes": 116711,
+      "source": "assets/references/celery.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "c33f630a023454e6f3598b91db036664566abeaced7f719bda1339d85e900038"
+    },
+    {
+      "path": "assets/references/champagne.jpg",
+      "sha256": "1658e089cc03071d871d11c07e015134da437b746bd6dcf584dceaebde35389b",
+      "bytes": 70431,
+      "source": "assets/references/champagne.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "1658e089cc03071d871d11c07e015134da437b746bd6dcf584dceaebde35389b"
+    },
+    {
+      "path": "assets/references/champignon-mushroom.jpg",
+      "sha256": "b017722c2ec7c3132823168d941cbd11b30f98b142c1298348c99917a7660f8d",
+      "bytes": 60216,
+      "source": "assets/references/champignon-mushroom.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "b017722c2ec7c3132823168d941cbd11b30f98b142c1298348c99917a7660f8d"
+    },
+    {
+      "path": "assets/references/cheddar-cheese.jpg",
+      "sha256": "08f72015d06a0e43f8e102410aa34f267148334e171aadfa18e5559d2c335ae2",
+      "bytes": 87633,
+      "source": "assets/references/cheddar-cheese.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "08f72015d06a0e43f8e102410aa34f267148334e171aadfa18e5559d2c335ae2"
+    },
+    {
+      "path": "assets/references/cheese-plane.jpg",
+      "sha256": "9bc67df3a9996852e15a8a88be95bff3dbb7bad3899339c41b19b463150d7644",
+      "bytes": 127679,
+      "source": "assets/references/cheese-plane.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "9bc67df3a9996852e15a8a88be95bff3dbb7bad3899339c41b19b463150d7644"
+    },
+    {
+      "path": "assets/references/cheesecloth.jpg",
+      "sha256": "9f0efdf95c22fc4b9291c2ce570a539bb153135d889aeb1165135824eef91ecf",
+      "bytes": 103261,
+      "source": "assets/references/cheesecloth.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "9f0efdf95c22fc4b9291c2ce570a539bb153135d889aeb1165135824eef91ecf"
+    },
+    {
+      "path": "assets/references/chef-knife.jpg",
+      "sha256": "86e1620b077d9b63c457609143f23e4d044ee0694fe9d0635141ef4f1cab34d8",
+      "bytes": 30118,
+      "source": "assets/references/chef-knife.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "86e1620b077d9b63c457609143f23e4d044ee0694fe9d0635141ef4f1cab34d8"
+    },
+    {
+      "path": "assets/references/chicken.jpg",
+      "sha256": "51e560cca60670110cf579ae935817fa93d9dad68e635580121ce671ddc973d6",
+      "bytes": 165613,
+      "source": "assets/references/chicken.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "51e560cca60670110cf579ae935817fa93d9dad68e635580121ce671ddc973d6"
+    },
+    {
+      "path": "assets/references/chickpeas.jpg",
+      "sha256": "8f18ef828eb22e1fd0e4641ef6be434066d0784d95cf00b91967200fa7053aff",
+      "bytes": 197268,
+      "source": "assets/references/chickpeas.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "8f18ef828eb22e1fd0e4641ef6be434066d0784d95cf00b91967200fa7053aff"
+    },
+    {
+      "path": "assets/references/chinese-five-spice.jpg",
+      "sha256": "d824bd6fb040abef4a502db3f6b304d89dc3a6372eadc8212bdbe78c8f46baf8",
+      "bytes": 34274,
+      "source": "assets/references/chinese-five-spice.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "d824bd6fb040abef4a502db3f6b304d89dc3a6372eadc8212bdbe78c8f46baf8"
+    },
+    {
+      "path": "assets/references/chinois.jpg",
+      "sha256": "b056fbfec9370ff93cac4a44a371202c87f4796871e1ddee033579801da11324",
+      "bytes": 78265,
+      "source": "assets/references/chinois.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "b056fbfec9370ff93cac4a44a371202c87f4796871e1ddee033579801da11324"
+    },
+    {
+      "path": "assets/references/chipotle-peppers.jpg",
+      "sha256": "3a59116e1e78675ce45d1bcf7c1104baedd52d3cc54f16a0bd4b03dc645b7d4b",
+      "bytes": 159924,
+      "source": "assets/references/chipotle-peppers.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "3a59116e1e78675ce45d1bcf7c1104baedd52d3cc54f16a0bd4b03dc645b7d4b"
+    },
+    {
+      "path": "assets/references/chives.jpg",
+      "sha256": "ea954f622568d8dccc82ad9529fedc503410b957ed2641f054660fdf14bd3ee7",
+      "bytes": 219189,
+      "source": "assets/references/chives.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "ea954f622568d8dccc82ad9529fedc503410b957ed2641f054660fdf14bd3ee7"
+    },
+    {
+      "path": "assets/references/chocolate-chips.jpg",
+      "sha256": "ce6d9cc394f629c9f0810d7a786e174d4be6c49cfad3dc81cdc4eca15b4963ab",
+      "bytes": 111024,
+      "source": "assets/references/chocolate-chips.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "ce6d9cc394f629c9f0810d7a786e174d4be6c49cfad3dc81cdc4eca15b4963ab"
+    },
+    {
+      "path": "assets/references/chocolate.jpg",
+      "sha256": "cee5063a519478f2247840307c59c82a4960b8951ef06c0246418424d17c489a",
+      "bytes": 66584,
+      "source": "assets/references/chocolate.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "cee5063a519478f2247840307c59c82a4960b8951ef06c0246418424d17c489a"
+    },
+    {
+      "path": "assets/references/chop.jpg",
+      "sha256": "2a590a74015f0b2e9a541d21c04e26400994d32fb9d1c043d3aeabd25fe09f04",
+      "bytes": 102898,
+      "source": "assets/references/chop.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "2a590a74015f0b2e9a541d21c04e26400994d32fb9d1c043d3aeabd25fe09f04"
+    },
+    {
+      "path": "assets/references/chopping-board.jpg",
+      "sha256": "52d6fe35cbed2b1e6a07cb8439f5aa82d4c1d34309a9a2c7d1683e240e43354b",
+      "bytes": 153209,
+      "source": "assets/references/chopping-board.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "52d6fe35cbed2b1e6a07cb8439f5aa82d4c1d34309a9a2c7d1683e240e43354b"
+    },
+    {
+      "path": "assets/references/chopstick.jpg",
+      "sha256": "a0270f0d787bbcceb5e92a2738a9cb26be399315ac62d520312d8b21187f3d0c",
+      "bytes": 69526,
+      "source": "assets/references/chopstick.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "a0270f0d787bbcceb5e92a2738a9cb26be399315ac62d520312d8b21187f3d0c"
+    },
+    {
+      "path": "assets/references/chorizo.jpg",
+      "sha256": "29062a9e59112826502ffdfec339132c1b6c3a36f9361b2b5d8b2d87bf9c0a56",
+      "bytes": 63710,
+      "source": "assets/references/chorizo.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "29062a9e59112826502ffdfec339132c1b6c3a36f9361b2b5d8b2d87bf9c0a56"
+    },
+    {
+      "path": "assets/references/cider-vinegar.jpg",
+      "sha256": "84615a25feadddfd286cf14e7564c34f1c33f14445f1e25e476412f1f2eabf8c",
+      "bytes": 38229,
+      "source": "assets/references/cider-vinegar.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "84615a25feadddfd286cf14e7564c34f1c33f14445f1e25e476412f1f2eabf8c"
+    },
+    {
+      "path": "assets/references/cinnamon.jpg",
+      "sha256": "f4f7d677497bee29dd9757384049cd761391f6cba1065ac61fe32eac22a9dcc0",
+      "bytes": 86457,
+      "source": "assets/references/cinnamon.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "f4f7d677497bee29dd9757384049cd761391f6cba1065ac61fe32eac22a9dcc0"
+    },
+    {
+      "path": "assets/references/citrus-press.jpg",
+      "sha256": "b7f78e86764778407ac4b788fe94db36e354916678fd0748523a776d964ccb05",
+      "bytes": 45753,
+      "source": "assets/references/citrus-press.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "b7f78e86764778407ac4b788fe94db36e354916678fd0748523a776d964ccb05"
+    },
+    {
+      "path": "assets/references/clams.jpg",
+      "sha256": "12643f46712d168e0cfb546d10858d6d8b4f6b302120507f0c379a7fe635d693",
+      "bytes": 50372,
+      "source": "assets/references/clams.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "12643f46712d168e0cfb546d10858d6d8b4f6b302120507f0c379a7fe635d693"
+    },
+    {
+      "path": "assets/references/clementine.jpg",
+      "sha256": "d4cc7cebc40294c0e3d4c44316d23bc295e17ab904ed4675eb19f2ecbf0d700d",
+      "bytes": 156582,
+      "source": "assets/references/clementine.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "d4cc7cebc40294c0e3d4c44316d23bc295e17ab904ed4675eb19f2ecbf0d700d"
+    },
+    {
+      "path": "assets/references/cloves.jpg",
+      "sha256": "20aeb88e25de414eeef8827963b22533365ba4251b1e8c3e338f10160c9d2c77",
+      "bytes": 78591,
+      "source": "assets/references/cloves.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "20aeb88e25de414eeef8827963b22533365ba4251b1e8c3e338f10160c9d2c77"
+    },
+    {
+      "path": "assets/references/cocktail-glass.jpg",
+      "sha256": "28c50da2d0693233bebff7996c3db9199a3ae3ece2f5f54990eb1d64cca1a070",
+      "bytes": 19925,
+      "source": "assets/references/cocktail-glass.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "28c50da2d0693233bebff7996c3db9199a3ae3ece2f5f54990eb1d64cca1a070"
+    },
+    {
+      "path": "assets/references/cocktail-shaker.jpg",
+      "sha256": "7e14c2d51319a231ce62015d9f049899653cd791774ba64880ad7f16d17f8579",
+      "bytes": 67398,
+      "source": "assets/references/cocktail-shaker.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "7e14c2d51319a231ce62015d9f049899653cd791774ba64880ad7f16d17f8579"
+    },
+    {
+      "path": "assets/references/cocoa-powder.jpg",
+      "sha256": "209138f68a27d4d7c69fae0a92564639b7fc030de6adb18bb095bed69f221e97",
+      "bytes": 90854,
+      "source": "assets/references/cocoa-powder.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "209138f68a27d4d7c69fae0a92564639b7fc030de6adb18bb095bed69f221e97"
+    },
+    {
+      "path": "assets/references/coconut-milk.jpg",
+      "sha256": "eabc7a49066b2a529e93896657f44ae143bc0341a123df031959b77aeabd00a0",
+      "bytes": 108448,
+      "source": "assets/references/coconut-milk.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "eabc7a49066b2a529e93896657f44ae143bc0341a123df031959b77aeabd00a0"
+    },
+    {
+      "path": "assets/references/coconut-oil.jpg",
+      "sha256": "8a601da4b3a46af8e82e0ea110b35c3e9a7eb998a408a53680c0d10e71c4860d",
+      "bytes": 63097,
+      "source": "assets/references/coconut-oil.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "8a601da4b3a46af8e82e0ea110b35c3e9a7eb998a408a53680c0d10e71c4860d"
+    },
+    {
+      "path": "assets/references/coconut.jpg",
+      "sha256": "84fe0e94c5acd32b3ba3b9f576c53b2b8c09b938f51cbe84e8367d1a45bcefdd",
+      "bytes": 95875,
+      "source": "assets/references/coconut.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "84fe0e94c5acd32b3ba3b9f576c53b2b8c09b938f51cbe84e8367d1a45bcefdd"
+    },
+    {
+      "path": "assets/references/coffee-beans.jpg",
+      "sha256": "b83b61afd5f61caec3e06d9532ad816710e160081ef3afc8d2e331ef0031dbf9",
+      "bytes": 172212,
+      "source": "assets/references/coffee-beans.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "b83b61afd5f61caec3e06d9532ad816710e160081ef3afc8d2e331ef0031dbf9"
+    },
+    {
+      "path": "assets/references/coffee-filter.jpg",
+      "sha256": "54bb16c34c9b9225b6031e36c7e3eca3e91c37e9f2e436a245655a89ebe0f187",
+      "bytes": 71358,
+      "source": "assets/references/coffee-filter.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "54bb16c34c9b9225b6031e36c7e3eca3e91c37e9f2e436a245655a89ebe0f187"
+    },
+    {
+      "path": "assets/references/coffee-grinder.jpg",
+      "sha256": "56008f96b55d24ce7847726ae9cb80bf4b001db25be363fa40689adac2c6f036",
+      "bytes": 206825,
+      "source": "assets/references/coffee-grinder.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "56008f96b55d24ce7847726ae9cb80bf4b001db25be363fa40689adac2c6f036"
+    },
+    {
+      "path": "assets/references/coffee.jpg",
+      "sha256": "01d9d9135c14f2bd4acb7774cc73fae467cf840a1315fb7d93ef0c235fa09bcb",
+      "bytes": 164214,
+      "source": "assets/references/coffee.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "01d9d9135c14f2bd4acb7774cc73fae467cf840a1315fb7d93ef0c235fa09bcb"
+    },
+    {
+      "path": "assets/references/comal.jpg",
+      "sha256": "e484d144a66a5e45fcfccf82aad559a1eb8253e0fd4d1ef943e7eeed76f93a3d",
+      "bytes": 152712,
+      "source": "assets/references/comal.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "e484d144a66a5e45fcfccf82aad559a1eb8253e0fd4d1ef943e7eeed76f93a3d"
+    },
+    {
+      "path": "assets/references/cookie-cutter.jpg",
+      "sha256": "f87bd09ebb1c79a416632430b849faffcb72bd86fcdb0e01a5017eee7914db5b",
+      "bytes": 98812,
+      "source": "assets/references/cookie-cutter.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "f87bd09ebb1c79a416632430b849faffcb72bd86fcdb0e01a5017eee7914db5b"
+    },
+    {
+      "path": "assets/references/corkscrew.jpg",
+      "sha256": "9b9f541bbe381ee3f4b4c19e0a30074eefb7022289d233e8cd6cd984551eac82",
+      "bytes": 97201,
+      "source": "assets/references/corkscrew.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "9b9f541bbe381ee3f4b4c19e0a30074eefb7022289d233e8cd6cd984551eac82"
+    },
+    {
+      "path": "assets/references/corn-flakes.jpg",
+      "sha256": "33e34c94b60c972caa1c4a018929dbe26ca440cb5be7a517bbd2019e6f5db56c",
+      "bytes": 160325,
+      "source": "assets/references/corn-flakes.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "33e34c94b60c972caa1c4a018929dbe26ca440cb5be7a517bbd2019e6f5db56c"
+    },
+    {
+      "path": "assets/references/cornflour.jpg",
+      "sha256": "a97513e2316bc0f5b1d9d4fb6afd56a02a55e2053e70c8c253b0d7cddbac6c68",
+      "bytes": 114350,
+      "source": "assets/references/cornflour.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "a97513e2316bc0f5b1d9d4fb6afd56a02a55e2053e70c8c253b0d7cddbac6c68"
+    },
+    {
+      "path": "assets/references/courgette.jpg",
+      "sha256": "d4fe8c0892ff404530b1a935cf3e52366f8d5b07631ce420c89f8f4b08ab6a72",
+      "bytes": 299675,
+      "source": "assets/references/courgette.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "d4fe8c0892ff404530b1a935cf3e52366f8d5b07631ce420c89f8f4b08ab6a72"
+    },
+    {
+      "path": "assets/references/crab-meat.jpg",
+      "sha256": "9b18eaf29b43629481d436840f265b2103bdc9dc6f02e8a6b50fbbd7994c05e4",
+      "bytes": 212372,
+      "source": "assets/references/crab-meat.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "9b18eaf29b43629481d436840f265b2103bdc9dc6f02e8a6b50fbbd7994c05e4"
+    },
+    {
+      "path": "assets/references/cream.jpg",
+      "sha256": "93688c1668fbdbda0db1c355070a4ff34534a2e861e7f5e32e48d1ef48cbdd13",
+      "bytes": 34622,
+      "source": "assets/references/cream.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "93688c1668fbdbda0db1c355070a4ff34534a2e861e7f5e32e48d1ef48cbdd13"
+    },
+    {
+      "path": "assets/references/creme-fraiche.jpg",
+      "sha256": "0f638e2a4a1fb6dfdcd14d8530e3a9682b5e7644e68bfe1d6dbdc006c88eea63",
+      "bytes": 163789,
+      "source": "assets/references/creme-fraiche.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "0f638e2a4a1fb6dfdcd14d8530e3a9682b5e7644e68bfe1d6dbdc006c88eea63"
+    },
+    {
+      "path": "assets/references/cucumber.jpg",
+      "sha256": "4f64cf59d60c128c454f14721b1e0d1f3ac739108c56e6bd2b4571d4b1318795",
+      "bytes": 178904,
+      "source": "assets/references/cucumber.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "4f64cf59d60c128c454f14721b1e0d1f3ac739108c56e6bd2b4571d4b1318795"
+    },
+    {
+      "path": "assets/references/cumin.jpg",
+      "sha256": "632cc07b561701f762917464e9988e7e4e4368f6c1e70298403f4519e8531f5f",
+      "bytes": 47993,
+      "source": "assets/references/cumin.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "632cc07b561701f762917464e9988e7e4e4368f6c1e70298403f4519e8531f5f"
+    },
+    {
+      "path": "assets/references/currants.jpg",
+      "sha256": "abb7e3321c330a6a229684b8b052e34d24b51abb957568cc1cea578151df77da",
+      "bytes": 138901,
+      "source": "assets/references/currants.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "abb7e3321c330a6a229684b8b052e34d24b51abb957568cc1cea578151df77da"
+    },
+    {
+      "path": "assets/references/curry-powder.jpg",
+      "sha256": "62d9cc8bc13f4301d5666c101bcb4213f60ef7134aaa0fa380f1b01aae303150",
+      "bytes": 159558,
+      "source": "assets/references/curry-powder.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "62d9cc8bc13f4301d5666c101bcb4213f60ef7134aaa0fa380f1b01aae303150"
+    },
+    {
+      "path": "assets/references/dill.jpg",
+      "sha256": "984bdd60f20abed0d9ed775f0f01e77faeb720e4116052c03f6dcc6ac6a3c3c3",
+      "bytes": 188348,
+      "source": "assets/references/dill.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "984bdd60f20abed0d9ed775f0f01e77faeb720e4116052c03f6dcc6ac6a3c3c3"
+    },
+    {
+      "path": "assets/references/double-boiler.jpg",
+      "sha256": "b2a669a3a2c87cdc2b159be0f95bd642d640ac666e254a5eebffd8b8b3c7b9e7",
+      "bytes": 97472,
+      "source": "assets/references/double-boiler.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "b2a669a3a2c87cdc2b159be0f95bd642d640ac666e254a5eebffd8b8b3c7b9e7"
+    },
+    {
+      "path": "assets/references/dough-docker.jpg",
+      "sha256": "eda60611307ce5da22a4a1b2f28bb4ac4a694674cfaa51234d1a39d0c2fe1694",
+      "bytes": 12926,
+      "source": "assets/references/dough-docker.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "eda60611307ce5da22a4a1b2f28bb4ac4a694674cfaa51234d1a39d0c2fe1694"
+    },
+    {
+      "path": "assets/references/dukkah.jpg",
+      "sha256": "f192c96daf911266e25cfc75162a17aeef17f96d800ee4e991c05d95ac22a0ac",
+      "bytes": 107575,
+      "source": "assets/references/dukkah.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "f192c96daf911266e25cfc75162a17aeef17f96d800ee4e991c05d95ac22a0ac"
+    },
+    {
+      "path": "assets/references/egg-noodles.jpg",
+      "sha256": "cce29f3897566d394ef0af734a06597aaaf2f2b610ae4b9dd8bef6a1368b1754",
+      "bytes": 153030,
+      "source": "assets/references/egg-noodles.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "cce29f3897566d394ef0af734a06597aaaf2f2b610ae4b9dd8bef6a1368b1754"
+    },
+    {
+      "path": "assets/references/egg-slicer.jpg",
+      "sha256": "059398680ab822d9a9ee4bffcaa2925a14c0b1c9c04f053f69208ecc336b45f3",
+      "bytes": 116829,
+      "source": "assets/references/egg-slicer.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "059398680ab822d9a9ee4bffcaa2925a14c0b1c9c04f053f69208ecc336b45f3"
+    },
+    {
+      "path": "assets/references/egg.jpg",
+      "sha256": "7a39f2f4dbbce5e173aaafbe8588decae973ed743e12f9e2c6eb9c68cf343268",
+      "bytes": 126349,
+      "source": "assets/references/egg.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "7a39f2f4dbbce5e173aaafbe8588decae973ed743e12f9e2c6eb9c68cf343268"
+    },
+    {
+      "path": "assets/references/electric-kettle.jpg",
+      "sha256": "69ba047ddf7e8b510031f9848b336f636ea894d4fff30d2c60c621d41830731f",
+      "bytes": 45283,
+      "source": "assets/references/electric-kettle.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "69ba047ddf7e8b510031f9848b336f636ea894d4fff30d2c60c621d41830731f"
+    },
+    {
+      "path": "assets/references/emulsify.jpg",
+      "sha256": "28c00a19c3c33d8bad018119f1b0f75d6e84786186ead8353e9da30b3cc04cfe",
+      "bytes": 93136,
+      "source": "assets/references/emulsify.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "28c00a19c3c33d8bad018119f1b0f75d6e84786186ead8353e9da30b3cc04cfe"
+    },
+    {
+      "path": "assets/references/english-muffins.jpg",
+      "sha256": "32d623fab75db2d279fed06a36b53123a8164e3c85577c7a4e6e61e961295584",
+      "bytes": 125727,
+      "source": "assets/references/english-muffins.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "32d623fab75db2d279fed06a36b53123a8164e3c85577c7a4e6e61e961295584"
+    },
+    {
+      "path": "assets/references/espresso-machine.jpg",
+      "sha256": "d3c6c6021eb0120b09c74e707b6bba1fecb5535dbb7dd53b6cbd2f6cd3929187",
+      "bytes": 65446,
+      "source": "assets/references/espresso-machine.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "d3c6c6021eb0120b09c74e707b6bba1fecb5535dbb7dd53b6cbd2f6cd3929187"
+    },
+    {
+      "path": "assets/references/fennel-seeds.jpg",
+      "sha256": "9f9af5f5c25d72bea3e1706aa63e3658f4207cee47d507321d9012b0afe24a30",
+      "bytes": 79668,
+      "source": "assets/references/fennel-seeds.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "9f9af5f5c25d72bea3e1706aa63e3658f4207cee47d507321d9012b0afe24a30"
+    },
+    {
+      "path": "assets/references/fermentation-crock.jpg",
+      "sha256": "0bb650eb0d816df1fa5927ec05a4f1130553eb5b5cce53d44ec6499d2c8a984a",
+      "bytes": 146305,
+      "source": "assets/references/fermentation-crock.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "0bb650eb0d816df1fa5927ec05a4f1130553eb5b5cce53d44ec6499d2c8a984a"
+    },
+    {
+      "path": "assets/references/feta.jpg",
+      "sha256": "f3418c14e7713e08d7249f1f5142f59a6a98092ca21d9d484477347765d5bc32",
+      "bytes": 92962,
+      "source": "assets/references/feta.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "f3418c14e7713e08d7249f1f5142f59a6a98092ca21d9d484477347765d5bc32"
+    },
+    {
+      "path": "assets/references/fillet-knife.jpg",
+      "sha256": "89ebb62b3ff3cddb6066a681754ca8b3aa46f5af97a2db088d827bf58d4802a9",
+      "bytes": 155968,
+      "source": "assets/references/fillet-knife.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "89ebb62b3ff3cddb6066a681754ca8b3aa46f5af97a2db088d827bf58d4802a9"
+    },
+    {
+      "path": "assets/references/fish-sauce.jpg",
+      "sha256": "f845e2a2bc86641f9df333b69788bcc6d3491afd32e5f46682878396fbaaacbd",
+      "bytes": 127157,
+      "source": "assets/references/fish-sauce.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "f845e2a2bc86641f9df333b69788bcc6d3491afd32e5f46682878396fbaaacbd"
+    },
+    {
+      "path": "assets/references/food-dehydrator.jpg",
+      "sha256": "f7cac6ed2647eb398c56deaa6ee78c277d053ff2a0e10f7a247ea8e8536cc22c",
+      "bytes": 191508,
+      "source": "assets/references/food-dehydrator.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "f7cac6ed2647eb398c56deaa6ee78c277d053ff2a0e10f7a247ea8e8536cc22c"
+    },
+    {
+      "path": "assets/references/food-mill.jpg",
+      "sha256": "544dcaf88f6e6a0831705e13035db61aaff50940c90a1bd47cd8c11323ae71d9",
+      "bytes": 38226,
+      "source": "assets/references/food-mill.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "544dcaf88f6e6a0831705e13035db61aaff50940c90a1bd47cd8c11323ae71d9"
+    },
+    {
+      "path": "assets/references/food-processor.jpg",
+      "sha256": "0eceeac081ed2367849d5f25129f70ef4b0c9a5a65875125e91d46702a42f456",
+      "bytes": 172650,
+      "source": "assets/references/food-processor.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "0eceeac081ed2367849d5f25129f70ef4b0c9a5a65875125e91d46702a42f456"
+    },
+    {
+      "path": "assets/references/french-press.jpg",
+      "sha256": "dc4939562dd5235b6fc4d1b9fb7cc78085aaad99553e3a3b44e28fee09db4479",
+      "bytes": 61696,
+      "source": "assets/references/french-press.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "dc4939562dd5235b6fc4d1b9fb7cc78085aaad99553e3a3b44e28fee09db4479"
+    },
+    {
+      "path": "assets/references/frying-pan.jpg",
+      "sha256": "f89b8d3e2c1cdd28a1652f29eefeda2e78a2b9bf2cccd84ceba1714628092650",
+      "bytes": 193542,
+      "source": "assets/references/frying-pan.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "f89b8d3e2c1cdd28a1652f29eefeda2e78a2b9bf2cccd84ceba1714628092650"
+    },
+    {
+      "path": "assets/references/funnel.jpg",
+      "sha256": "42b98940d98ceb923f6d4ecbd4fa408657cdd9e513bff3c96036a162140bed06",
+      "bytes": 53502,
+      "source": "assets/references/funnel.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "42b98940d98ceb923f6d4ecbd4fa408657cdd9e513bff3c96036a162140bed06"
+    },
+    {
+      "path": "assets/references/garam-masala.jpg",
+      "sha256": "2ea8bb26c47902258d2da1c13cc7c2fa35b055f23d7224229164d9a3316d05ac",
+      "bytes": 165756,
+      "source": "assets/references/garam-masala.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "2ea8bb26c47902258d2da1c13cc7c2fa35b055f23d7224229164d9a3316d05ac"
+    },
+    {
+      "path": "assets/references/garlic-powder.jpg",
+      "sha256": "b6fc9dcc370192ff1c0c0e504994d897c26fa434559c6055d39777ea347fe40c",
+      "bytes": 64684,
+      "source": "assets/references/garlic-powder.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "b6fc9dcc370192ff1c0c0e504994d897c26fa434559c6055d39777ea347fe40c"
+    },
+    {
+      "path": "assets/references/garlic-press.jpg",
+      "sha256": "f23401a920500f1ac2985e3799ac33935ef3d8152af3de6c68f4fd396f3c812f",
+      "bytes": 56390,
+      "source": "assets/references/garlic-press.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "f23401a920500f1ac2985e3799ac33935ef3d8152af3de6c68f4fd396f3c812f"
+    },
+    {
+      "path": "assets/references/garlic.jpg",
+      "sha256": "b9873a7c8ad57d50c1eaae468ed35516453b01f2f6cda89e9b56455c38f1dedf",
+      "bytes": 90636,
+      "source": "assets/references/garlic.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "b9873a7c8ad57d50c1eaae468ed35516453b01f2f6cda89e9b56455c38f1dedf"
+    },
+    {
+      "path": "assets/references/gin.jpg",
+      "sha256": "666907c02e1aa28a30108be4300ed8249e07acd831b48327bd37a4edf66eca22",
+      "bytes": 207374,
+      "source": "assets/references/gin.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "666907c02e1aa28a30108be4300ed8249e07acd831b48327bd37a4edf66eca22"
+    },
+    {
+      "path": "assets/references/ginger-beer.jpg",
+      "sha256": "ce3f939187a256ca92127b9d3d7e5983ff0d764e13c1310b38ad31a831250180",
+      "bytes": 149973,
+      "source": "assets/references/ginger-beer.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "ce3f939187a256ca92127b9d3d7e5983ff0d764e13c1310b38ad31a831250180"
+    },
+    {
+      "path": "assets/references/ginger.jpg",
+      "sha256": "dc7cfd54a70028adb47d29eb1caf00cb3e3de4bd5c6742189a3731f13f872bfd",
+      "bytes": 219423,
+      "source": "assets/references/ginger.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "dc7cfd54a70028adb47d29eb1caf00cb3e3de4bd5c6742189a3731f13f872bfd"
+    },
+    {
+      "path": "assets/references/grater.jpg",
+      "sha256": "f31991a2608c04cff0890e94d9563d417401c731b83c992b3cfc41ec4064031e",
+      "bytes": 110191,
+      "source": "assets/references/grater.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "f31991a2608c04cff0890e94d9563d417401c731b83c992b3cfc41ec4064031e"
+    },
+    {
+      "path": "assets/references/green-beans.jpg",
+      "sha256": "769b15b74d326a5deb1a8e9a6dd0e680a5059c9719e178e16e29e4dcc6247c79",
+      "bytes": 140459,
+      "source": "assets/references/green-beans.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "769b15b74d326a5deb1a8e9a6dd0e680a5059c9719e178e16e29e4dcc6247c79"
+    },
+    {
+      "path": "assets/references/green-bell-pepper.jpg",
+      "sha256": "4dec525b5ae6e5bf4889cbef1225be44ec6238c030dc75c5eb7d2ff786773fac",
+      "bytes": 73556,
+      "source": "assets/references/green-bell-pepper.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "4dec525b5ae6e5bf4889cbef1225be44ec6238c030dc75c5eb7d2ff786773fac"
+    },
+    {
+      "path": "assets/references/green-tea.jpg",
+      "sha256": "60b4f0377a2e51f0fc75111cfed177a7beed5c6b8904ce1ab98423ff6c5b6f3a",
+      "bytes": 46657,
+      "source": "assets/references/green-tea.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "60b4f0377a2e51f0fc75111cfed177a7beed5c6b8904ce1ab98423ff6c5b6f3a"
+    },
+    {
+      "path": "assets/references/grenadine.jpg",
+      "sha256": "1821d3fc7128ac8cf92c94c9f6b0f933196ca26933d668560b929390ed3c9bfc",
+      "bytes": 93919,
+      "source": "assets/references/grenadine.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "1821d3fc7128ac8cf92c94c9f6b0f933196ca26933d668560b929390ed3c9bfc"
+    },
+    {
+      "path": "assets/references/grill.jpg",
+      "sha256": "208c489ca951a7448ef29170ae2f98429c210039ba7cc3dbd86d7d32abb4afad",
+      "bytes": 96399,
+      "source": "assets/references/grill.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "208c489ca951a7448ef29170ae2f98429c210039ba7cc3dbd86d7d32abb4afad"
+    },
+    {
+      "path": "assets/references/grits.jpg",
+      "sha256": "9eccc743a31c8185355b2643e0cc6259a5263a88e77dc60d81a19b5bfa106e48",
+      "bytes": 141187,
+      "source": "assets/references/grits.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "9eccc743a31c8185355b2643e0cc6259a5263a88e77dc60d81a19b5bfa106e48"
+    },
+    {
+      "path": "assets/references/guanciale.jpg",
+      "sha256": "dab63c4e8bb0175afe21414391d891b3089b7e3ebe1d0b2bb2d0eb8cdb97855f",
+      "bytes": 52385,
+      "source": "assets/references/guanciale.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "dab63c4e8bb0175afe21414391d891b3089b7e3ebe1d0b2bb2d0eb8cdb97855f"
+    },
+    {
+      "path": "assets/references/ham.jpg",
+      "sha256": "fc042daaa33fc895068b24e3f1bf488cdce25492ff7dc4fe525556b79bf93f28",
+      "bytes": 90485,
+      "source": "assets/references/ham.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "fc042daaa33fc895068b24e3f1bf488cdce25492ff7dc4fe525556b79bf93f28"
+    },
+    {
+      "path": "assets/references/hand-mixer.jpg",
+      "sha256": "7c7f0a32b5de7d6d3c234cb6ebc4f70c7d0bcdf92366e8fb5d4e1002c08b5ede",
+      "bytes": 173675,
+      "source": "assets/references/hand-mixer.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "7c7f0a32b5de7d6d3c234cb6ebc4f70c7d0bcdf92366e8fb5d4e1002c08b5ede"
+    },
+    {
+      "path": "assets/references/herbes-de-provence.jpg",
+      "sha256": "173802f1bd8ec7d22fe9ab55e68dede7a98fd7221fb8e18f3724070de63d8b93",
+      "bytes": 242995,
+      "source": "assets/references/herbes-de-provence.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "173802f1bd8ec7d22fe9ab55e68dede7a98fd7221fb8e18f3724070de63d8b93"
+    },
+    {
+      "path": "assets/references/hoisin-sauce.jpg",
+      "sha256": "1e26d8a901a2aece2e22b5d3123ed7ccb823924901a2c3a55d48544bb03a741d",
+      "bytes": 157167,
+      "source": "assets/references/hoisin-sauce.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "1e26d8a901a2aece2e22b5d3123ed7ccb823924901a2c3a55d48544bb03a741d"
+    },
+    {
+      "path": "assets/references/honey.jpg",
+      "sha256": "f9f243d86b256e5f0a946f3d05bc2042a9e11220ae68531937367a6d6de11ce0",
+      "bytes": 116511,
+      "source": "assets/references/honey.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "f9f243d86b256e5f0a946f3d05bc2042a9e11220ae68531937367a6d6de11ce0"
+    },
+    {
+      "path": "assets/references/hot-sauce.jpg",
+      "sha256": "476a00c300a8f668e8777b81fce82a015895203d3910a141c97fa3324c911ee5",
+      "bytes": 65044,
+      "source": "assets/references/hot-sauce.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "476a00c300a8f668e8777b81fce82a015895203d3910a141c97fa3324c911ee5"
+    },
+    {
+      "path": "assets/references/ice-cream-maker.jpg",
+      "sha256": "bdf7afe703f04fea0354a97d61a213eaaf88b96159a07eac798a186bdf7bbc0f",
+      "bytes": 110215,
+      "source": "assets/references/ice-cream-maker.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "bdf7afe703f04fea0354a97d61a213eaaf88b96159a07eac798a186bdf7bbc0f"
+    },
+    {
+      "path": "assets/references/ice-cream.jpg",
+      "sha256": "b9fd860f6cd55d1164a240806ade91631953be6139fdf07fd076b736c17f3c34",
+      "bytes": 39745,
+      "source": "assets/references/ice-cream.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "b9fd860f6cd55d1164a240806ade91631953be6139fdf07fd076b736c17f3c34"
+    },
+    {
+      "path": "assets/references/ice-cube-tray.jpg",
+      "sha256": "12d0f0370260b781c834dd7189ede3865da32f8d701a0aacdec4e4073e196ba6",
+      "bytes": 122961,
+      "source": "assets/references/ice-cube-tray.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "12d0f0370260b781c834dd7189ede3865da32f8d701a0aacdec4e4073e196ba6"
+    },
+    {
+      "path": "assets/references/icing-sugar.jpg",
+      "sha256": "975847e9c56f5c17448c1275b60fbc1bffa9db7e8080586e0a11ac47d5956d8e",
+      "bytes": 37285,
+      "source": "assets/references/icing-sugar.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "975847e9c56f5c17448c1275b60fbc1bffa9db7e8080586e0a11ac47d5956d8e"
+    },
+    {
+      "path": "assets/references/immersion-blender.jpg",
+      "sha256": "5d765c50ec33a1b0ac40830b0d38ee536dab72a05a88c55fee25a6b0363f444d",
+      "bytes": 87545,
+      "source": "assets/references/immersion-blender.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "5d765c50ec33a1b0ac40830b0d38ee536dab72a05a88c55fee25a6b0363f444d"
+    },
+    {
+      "path": "assets/references/jalapeno.jpg",
+      "sha256": "c3f3fc9c0f6282d7e20271ee1e798533121c0e408d60e7561352336a510bd28d",
+      "bytes": 136611,
+      "source": "assets/references/jalapeno.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "c3f3fc9c0f6282d7e20271ee1e798533121c0e408d60e7561352336a510bd28d"
+    },
+    {
+      "path": "assets/references/jam.jpg",
+      "sha256": "7d3383041430ff2a8fe03b317306f07a1df2cf5469f4544ebc08328c0e166785",
+      "bytes": 74194,
+      "source": "assets/references/jam.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "7d3383041430ff2a8fe03b317306f07a1df2cf5469f4544ebc08328c0e166785"
+    },
+    {
+      "path": "assets/references/jigger.jpg",
+      "sha256": "b42d1e468496f238fcb94ca9caa547bf402b771949146915a2658c768c9d885e",
+      "bytes": 59137,
+      "source": "assets/references/jigger.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "b42d1e468496f238fcb94ca9caa547bf402b771949146915a2658c768c9d885e"
+    },
+    {
+      "path": "assets/references/jug.jpg",
+      "sha256": "e8c320c9615bbf0f64386d55306d2b375b9d46e09d3385ce2e45970e1279f9b7",
+      "bytes": 22561,
+      "source": "assets/references/jug.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "e8c320c9615bbf0f64386d55306d2b375b9d46e09d3385ce2e45970e1279f9b7"
+    },
+    {
+      "path": "assets/references/ketchup.jpg",
+      "sha256": "12437583e7fbbbd5993e099e4a10f3e8ac2e3d0c041963c6e60140fe30893180",
+      "bytes": 156543,
+      "source": "assets/references/ketchup.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "12437583e7fbbbd5993e099e4a10f3e8ac2e3d0c041963c6e60140fe30893180"
+    },
+    {
+      "path": "assets/references/kidney-beans.jpg",
+      "sha256": "1beab1c0faacc01d345a41f18247d39454ef51bd35efe704b73a4800bd5b239e",
+      "bytes": 107075,
+      "source": "assets/references/kidney-beans.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "1beab1c0faacc01d345a41f18247d39454ef51bd35efe704b73a4800bd5b239e"
+    },
+    {
+      "path": "assets/references/kitchen-scale.jpg",
+      "sha256": "da6f4a2b2fcf43d9e16f5119eb0a089e1f8e0623b5f8d0ae8d7fd537e5292d05",
+      "bytes": 77378,
+      "source": "assets/references/kitchen-scale.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "da6f4a2b2fcf43d9e16f5119eb0a089e1f8e0623b5f8d0ae8d7fd537e5292d05"
+    },
+    {
+      "path": "assets/references/kitchen-shears.jpg",
+      "sha256": "8ec05df77cb9d3580eda3ad3ed82a9a61e0bf579fdbfe29295a2ea3b9efd7382",
+      "bytes": 36154,
+      "source": "assets/references/kitchen-shears.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "8ec05df77cb9d3580eda3ad3ed82a9a61e0bf579fdbfe29295a2ea3b9efd7382"
+    },
+    {
+      "path": "assets/references/kitchen-timer.jpg",
+      "sha256": "01911230d268814d7cf540f468e89941a9c1b0970cebbb792094ec21a9b85b04",
+      "bytes": 28328,
+      "source": "assets/references/kitchen-timer.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "01911230d268814d7cf540f468e89941a9c1b0970cebbb792094ec21a9b85b04"
+    },
+    {
+      "path": "assets/references/knife.jpg",
+      "sha256": "8a5cb5474714323382bde7064445fb7069195f0877e59fbc98a5398bce1c25da",
+      "bytes": 162959,
+      "source": "assets/references/knife.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "8a5cb5474714323382bde7064445fb7069195f0877e59fbc98a5398bce1c25da"
+    },
+    {
+      "path": "assets/references/kombucha-scoby.jpg",
+      "sha256": "79a7c5e96245333854bcf4a002eea9d8ea271a8ff0a3ec10bd69beff9cf13f9d",
+      "bytes": 79652,
+      "source": "assets/references/kombucha-scoby.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "79a7c5e96245333854bcf4a002eea9d8ea271a8ff0a3ec10bd69beff9cf13f9d"
+    },
+    {
+      "path": "assets/references/ladle.jpg",
+      "sha256": "e6517ebd2021cb55f62c3a14a6301b40e2591c18e9ad1010e42fbd0a84a94f5a",
+      "bytes": 82530,
+      "source": "assets/references/ladle.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "e6517ebd2021cb55f62c3a14a6301b40e2591c18e9ad1010e42fbd0a84a94f5a"
+    },
+    {
+      "path": "assets/references/lamb.jpg",
+      "sha256": "cd50f43369e0501e065acb4eb342c979b6985409850041b4c9bf48dd3772f6bd",
+      "bytes": 237173,
+      "source": "assets/references/lamb.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "cd50f43369e0501e065acb4eb342c979b6985409850041b4c9bf48dd3772f6bd"
+    },
+    {
+      "path": "assets/references/lard.jpg",
+      "sha256": "ac47069df3592f7d1ce3e17f686ced63e2a038b3c1173640d1a0182298344785",
+      "bytes": 95704,
+      "source": "assets/references/lard.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "ac47069df3592f7d1ce3e17f686ced63e2a038b3c1173640d1a0182298344785"
+    },
+    {
+      "path": "assets/references/leek.jpg",
+      "sha256": "6b0d3490131fdf576b51fd21849ad4159608dc10d2881810ce00d38109f1749a",
+      "bytes": 141100,
+      "source": "assets/references/leek.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "6b0d3490131fdf576b51fd21849ad4159608dc10d2881810ce00d38109f1749a"
+    },
+    {
+      "path": "assets/references/lemon.jpg",
+      "sha256": "ae372eca8df0b8029253222e2a77468322e5d9ef8b41b3182e50fecdd34a3ff7",
+      "bytes": 81653,
+      "source": "assets/references/lemon.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "ae372eca8df0b8029253222e2a77468322e5d9ef8b41b3182e50fecdd34a3ff7"
+    },
+    {
+      "path": "assets/references/lentils.jpg",
+      "sha256": "2150956a5c7553f4ec27104e5d9c4d2580be8f6d672aa9752636a2cbeb1823a7",
+      "bytes": 104667,
+      "source": "assets/references/lentils.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "2150956a5c7553f4ec27104e5d9c4d2580be8f6d672aa9752636a2cbeb1823a7"
+    },
+    {
+      "path": "assets/references/lime.jpg",
+      "sha256": "8464cddfee6a39b6a9ca836ab9fad70588e7191c7e83c67f2cce3ede15c47e15",
+      "bytes": 75441,
+      "source": "assets/references/lime.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "8464cddfee6a39b6a9ca836ab9fad70588e7191c7e83c67f2cce3ede15c47e15"
+    },
+    {
+      "path": "assets/references/liquid-smoke.jpg",
+      "sha256": "ce2965e7e3f1635ece80cf23c4c0948aa7b4fb31dd0be9e5d7b6ac312b4517b6",
+      "bytes": 46704,
+      "source": "assets/references/liquid-smoke.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "ce2965e7e3f1635ece80cf23c4c0948aa7b4fb31dd0be9e5d7b6ac312b4517b6"
+    },
+    {
+      "path": "assets/references/loaf-tin.jpg",
+      "sha256": "758c2940c3324ce4f3d564bb65b5cbd7e6670441e3e079fad4b577da82b23478",
+      "bytes": 157185,
+      "source": "assets/references/loaf-tin.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "758c2940c3324ce4f3d564bb65b5cbd7e6670441e3e079fad4b577da82b23478"
+    },
+    {
+      "path": "assets/references/macadamia-nut.jpg",
+      "sha256": "19973f357f98a9217c47777c794bb7473b80c5e59095103d205b68c06ac550d8",
+      "bytes": 97675,
+      "source": "assets/references/macadamia-nut.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "19973f357f98a9217c47777c794bb7473b80c5e59095103d205b68c06ac550d8"
+    },
+    {
+      "path": "assets/references/macaroni.jpg",
+      "sha256": "f5eb47768f1fe174a2ec76805369a59943c1e30de03f08e5c2655c06e5cf512a",
+      "bytes": 17997,
+      "source": "assets/references/macaroni.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "f5eb47768f1fe174a2ec76805369a59943c1e30de03f08e5c2655c06e5cf512a"
+    },
+    {
+      "path": "assets/references/mandoline.jpg",
+      "sha256": "5607ecb8c062f030271412d804e8ba42bcbc897eba19c4657e26dfeda78962d0",
+      "bytes": 83802,
+      "source": "assets/references/mandoline.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "5607ecb8c062f030271412d804e8ba42bcbc897eba19c4657e26dfeda78962d0"
+    },
+    {
+      "path": "assets/references/maple-syrup.jpg",
+      "sha256": "c3a2ef5d8ac9df95407444d569d202b132fc2bea08f5d68ca51a1d69957adb54",
+      "bytes": 55074,
+      "source": "assets/references/maple-syrup.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "c3a2ef5d8ac9df95407444d569d202b132fc2bea08f5d68ca51a1d69957adb54"
+    },
+    {
+      "path": "assets/references/marjoram.jpg",
+      "sha256": "3a012be5fb5a4ea6061cbca2b2fedaee108f2f9eba3d19f1cca7f1981c0b42ef",
+      "bytes": 122106,
+      "source": "assets/references/marjoram.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "3a012be5fb5a4ea6061cbca2b2fedaee108f2f9eba3d19f1cca7f1981c0b42ef"
+    },
+    {
+      "path": "assets/references/marmalade.jpg",
+      "sha256": "2943c49137c3bc00e31721875371e694d69f2b56ce82074cc2a3205814ca008e",
+      "bytes": 75613,
+      "source": "assets/references/marmalade.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "2943c49137c3bc00e31721875371e694d69f2b56ce82074cc2a3205814ca008e"
+    },
+    {
+      "path": "assets/references/mascarpone.jpg",
+      "sha256": "132112298fca478a134ba7486b7bf730afc8b2f2a1c11a26843bf09bb174665f",
+      "bytes": 157758,
+      "source": "assets/references/mascarpone.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "132112298fca478a134ba7486b7bf730afc8b2f2a1c11a26843bf09bb174665f"
+    },
+    {
+      "path": "assets/references/matcha-powder.jpg",
+      "sha256": "5c6478f8bfaa911c1c521b7eb47bae5f8e1d1578f6c312ce5b0cd03664c0fbc2",
+      "bytes": 187852,
+      "source": "assets/references/matcha-powder.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "5c6478f8bfaa911c1c521b7eb47bae5f8e1d1578f6c312ce5b0cd03664c0fbc2"
+    },
+    {
+      "path": "assets/references/mayonnaise.jpg",
+      "sha256": "31181dd799f2bba5266eb007c08c8738e090b3db9af5cbd769d3aa554f498bbd",
+      "bytes": 83673,
+      "source": "assets/references/mayonnaise.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "31181dd799f2bba5266eb007c08c8738e090b3db9af5cbd769d3aa554f498bbd"
+    },
+    {
+      "path": "assets/references/measuring-cup.jpg",
+      "sha256": "a08591d00423033f8739e73ff42921768bdb49c8d52ade874b9063aa74911765",
+      "bytes": 72528,
+      "source": "assets/references/measuring-cup.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "a08591d00423033f8739e73ff42921768bdb49c8d52ade874b9063aa74911765"
+    },
+    {
+      "path": "assets/references/measuring-spoon.jpg",
+      "sha256": "e210c680736e62f5816789793d62ca686eb81fc93430b0c6e031a5cb6236aac9",
+      "bytes": 92375,
+      "source": "assets/references/measuring-spoon.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "e210c680736e62f5816789793d62ca686eb81fc93430b0c6e031a5cb6236aac9"
+    },
+    {
+      "path": "assets/references/meat-cleaver.jpg",
+      "sha256": "8856e9c755d040d4db48688cfcb873464de8a28a48860088a9c1f314c0a2f26c",
+      "bytes": 27031,
+      "source": "assets/references/meat-cleaver.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "8856e9c755d040d4db48688cfcb873464de8a28a48860088a9c1f314c0a2f26c"
+    },
+    {
+      "path": "assets/references/meat-grinder.jpg",
+      "sha256": "b0b91a201b5e642cf0b96961a9a48e03de8265e20b2558ab90fe1fa623eaf88d",
+      "bytes": 46262,
+      "source": "assets/references/meat-grinder.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "b0b91a201b5e642cf0b96961a9a48e03de8265e20b2558ab90fe1fa623eaf88d"
+    },
+    {
+      "path": "assets/references/meat-mallet.jpg",
+      "sha256": "e0823ac38ffc8993b5874ac21e69111e703d17d8b346e08aa5608582a7723068",
+      "bytes": 136421,
+      "source": "assets/references/meat-mallet.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "e0823ac38ffc8993b5874ac21e69111e703d17d8b346e08aa5608582a7723068"
+    },
+    {
+      "path": "assets/references/melon-baller.jpg",
+      "sha256": "65d56889cbccbdb97c563bdf70681661d4d066e9ff3de7b8edffd787d19e9c45",
+      "bytes": 29236,
+      "source": "assets/references/melon-baller.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "65d56889cbccbdb97c563bdf70681661d4d066e9ff3de7b8edffd787d19e9c45"
+    },
+    {
+      "path": "assets/references/mezcal.jpg",
+      "sha256": "f1223e4ecfe6da0dcb4d4c04e117cc58e7a8663b4b9b1c5325125fcde5b805ea",
+      "bytes": 202385,
+      "source": "assets/references/mezcal.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "f1223e4ecfe6da0dcb4d4c04e117cc58e7a8663b4b9b1c5325125fcde5b805ea"
+    },
+    {
+      "path": "assets/references/milk.jpg",
+      "sha256": "dd4157e39f0cd4bc5c8064b3b629f128a51221aa28239fc12757c7fbbc8708c2",
+      "bytes": 101558,
+      "source": "assets/references/milk.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "dd4157e39f0cd4bc5c8064b3b629f128a51221aa28239fc12757c7fbbc8708c2"
+    },
+    {
+      "path": "assets/references/mint.jpg",
+      "sha256": "484ec953037a806f1bcdc7e5b786cc4e666cd514488f8f28881d5296b18f091b",
+      "bytes": 126042,
+      "source": "assets/references/mint.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "484ec953037a806f1bcdc7e5b786cc4e666cd514488f8f28881d5296b18f091b"
+    },
+    {
+      "path": "assets/references/miso.jpg",
+      "sha256": "5f8fbf4e424b1331ca81dad0b582458ffc57013c8af404c449aaf36234ddc053",
+      "bytes": 61375,
+      "source": "assets/references/miso.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "5f8fbf4e424b1331ca81dad0b582458ffc57013c8af404c449aaf36234ddc053"
+    },
+    {
+      "path": "assets/references/moka-pot.jpg",
+      "sha256": "3229c8f6cf0a88bcf00677b06e31259d335294a14bdde9b2dfeda80e745584cc",
+      "bytes": 46374,
+      "source": "assets/references/moka-pot.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "3229c8f6cf0a88bcf00677b06e31259d335294a14bdde9b2dfeda80e745584cc"
+    },
+    {
+      "path": "assets/references/mortar-and-pestle.jpg",
+      "sha256": "ca24421bf608236309b2a7a6e1084d1762d19ebf7d4d3ee35edf8f638c0a466f",
+      "bytes": 82786,
+      "source": "assets/references/mortar-and-pestle.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "ca24421bf608236309b2a7a6e1084d1762d19ebf7d4d3ee35edf8f638c0a466f"
+    },
+    {
+      "path": "assets/references/msg.jpg",
+      "sha256": "c068f2860644de6eca85f6a2f8d99465a198402d52400dbd8ffaf53dbd2af4b3",
+      "bytes": 68926,
+      "source": "assets/references/msg.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "c068f2860644de6eca85f6a2f8d99465a198402d52400dbd8ffaf53dbd2af4b3"
+    },
+    {
+      "path": "assets/references/muddler.jpg",
+      "sha256": "b6809712c3e36de6b150fa1d664153a9e4086b7083512cd5b0ee0c0936b74867",
+      "bytes": 8043,
+      "source": "assets/references/muddler.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "b6809712c3e36de6b150fa1d664153a9e4086b7083512cd5b0ee0c0936b74867"
+    },
+    {
+      "path": "assets/references/muffin-tin.jpg",
+      "sha256": "be6b72f60c1acc3660deeb4ca56344f3545db3b9f4b3461e8a33c72042bac237",
+      "bytes": 53563,
+      "source": "assets/references/muffin-tin.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "be6b72f60c1acc3660deeb4ca56344f3545db3b9f4b3461e8a33c72042bac237"
+    },
+    {
+      "path": "assets/references/mushrooms.jpg",
+      "sha256": "8d54a01f03d57443b58bdefa13ccd738d87ea681fc842d5b73210c46e4ca5167",
+      "bytes": 150757,
+      "source": "assets/references/mushrooms.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "8d54a01f03d57443b58bdefa13ccd738d87ea681fc842d5b73210c46e4ca5167"
+    },
+    {
+      "path": "assets/references/mustard.jpg",
+      "sha256": "7aa46530942d1b8836366d44fdf9ffb3c054c15fa99fe1aef5a1489c38866400",
+      "bytes": 197125,
+      "source": "assets/references/mustard.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "7aa46530942d1b8836366d44fdf9ffb3c054c15fa99fe1aef5a1489c38866400"
+    },
+    {
+      "path": "assets/references/nori.jpg",
+      "sha256": "843d0481df6ab86f9836253bce4301c2e1feb81a75785a5834a74388ab67f678",
+      "bytes": 151644,
+      "source": "assets/references/nori.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "843d0481df6ab86f9836253bce4301c2e1feb81a75785a5834a74388ab67f678"
+    },
+    {
+      "path": "assets/references/nutmeg.jpg",
+      "sha256": "22cf37a9006741f24e1cae0e6057ed9da18817bfc305085b1d769582472d6feb",
+      "bytes": 158309,
+      "source": "assets/references/nutmeg.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "22cf37a9006741f24e1cae0e6057ed9da18817bfc305085b1d769582472d6feb"
+    },
+    {
+      "path": "assets/references/oats.jpg",
+      "sha256": "cce4758f74e69f22bfcb7166145f819942d96461a6bd0472f7a75ec1fe33172a",
+      "bytes": 52259,
+      "source": "assets/references/oats.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "cce4758f74e69f22bfcb7166145f819942d96461a6bd0472f7a75ec1fe33172a"
+    },
+    {
+      "path": "assets/references/octopus.jpg",
+      "sha256": "9f4cd7fe0a363490b56215306c00fe2341cb9977f959822df49eb0ef9d146d72",
+      "bytes": 219461,
+      "source": "assets/references/octopus.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "9f4cd7fe0a363490b56215306c00fe2341cb9977f959822df49eb0ef9d146d72"
+    },
+    {
+      "path": "assets/references/old-bay-seasoning.jpg",
+      "sha256": "a62e4210ddba2cb8cb541ea1d0e8af6293767c6780ad56f59072c7a6c9b297f3",
+      "bytes": 70057,
+      "source": "assets/references/old-bay-seasoning.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "a62e4210ddba2cb8cb541ea1d0e8af6293767c6780ad56f59072c7a6c9b297f3"
+    },
+    {
+      "path": "assets/references/olive-oil.jpg",
+      "sha256": "2ad052a99bebc6b672768147041165e06b5befd809aa8fc0dbac7e10a6732a73",
+      "bytes": 65392,
+      "source": "assets/references/olive-oil.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "2ad052a99bebc6b672768147041165e06b5befd809aa8fc0dbac7e10a6732a73"
+    },
+    {
+      "path": "assets/references/onion-powder.jpg",
+      "sha256": "32bee67d87ac0f956b2a642a44219af309a5d8501d67cf92540dcc2b933f58dc",
+      "bytes": 103795,
+      "source": "assets/references/onion-powder.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "32bee67d87ac0f956b2a642a44219af309a5d8501d67cf92540dcc2b933f58dc"
+    },
+    {
+      "path": "assets/references/onion.jpg",
+      "sha256": "1da755853a50f885c8116227962849edb37c03abda0d07912e3044121ba1f2ad",
+      "bytes": 135580,
+      "source": "assets/references/onion.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "1da755853a50f885c8116227962849edb37c03abda0d07912e3044121ba1f2ad"
+    },
+    {
+      "path": "assets/references/orange-juice.jpg",
+      "sha256": "c5ec173b2bd56edd6e19a769c5fc83fb14079a93a28105b294162aed9259e1ef",
+      "bytes": 90044,
+      "source": "assets/references/orange-juice.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "c5ec173b2bd56edd6e19a769c5fc83fb14079a93a28105b294162aed9259e1ef"
+    },
+    {
+      "path": "assets/references/orange-liqueur.jpg",
+      "sha256": "c466c83ce0f07f18da225e7c6f986f299e7b80158a4a9bd4f2cbd09f2b366262",
+      "bytes": 106605,
+      "source": "assets/references/orange-liqueur.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "c466c83ce0f07f18da225e7c6f986f299e7b80158a4a9bd4f2cbd09f2b366262"
+    },
+    {
+      "path": "assets/references/orange.jpg",
+      "sha256": "f6cefd035bf60e43d9063fc58aa156f4293d809c0b571cc0a140c9d18d44ed63",
+      "bytes": 88263,
+      "source": "assets/references/orange.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "f6cefd035bf60e43d9063fc58aa156f4293d809c0b571cc0a140c9d18d44ed63"
+    },
+    {
+      "path": "assets/references/oregano.jpg",
+      "sha256": "06c98d71830f168ed41d69f87e2fd2db0936517015e449c36942848f9dca75e2",
+      "bytes": 64672,
+      "source": "assets/references/oregano.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "06c98d71830f168ed41d69f87e2fd2db0936517015e449c36942848f9dca75e2"
+    },
+    {
+      "path": "assets/references/orgeat.jpg",
+      "sha256": "f429a073365afc62414ea339ea4608f88daaa727f6263df061c42a8650084156",
+      "bytes": 141766,
+      "source": "assets/references/orgeat.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "f429a073365afc62414ea339ea4608f88daaa727f6263df061c42a8650084156"
+    },
+    {
+      "path": "assets/references/oyster-sauce.jpg",
+      "sha256": "a515736fc033f7028a8532cfcbffee9b6da06bfcdce58237e166f14f495554bb",
+      "bytes": 45300,
+      "source": "assets/references/oyster-sauce.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "a515736fc033f7028a8532cfcbffee9b6da06bfcdce58237e166f14f495554bb"
+    },
+    {
+      "path": "assets/references/paella-pan.jpg",
+      "sha256": "78d1442fad343460e0d89a7d06b5c698033005d9fdfbd55916100ab16941f47f",
+      "bytes": 197727,
+      "source": "assets/references/paella-pan.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "78d1442fad343460e0d89a7d06b5c698033005d9fdfbd55916100ab16941f47f"
+    },
+    {
+      "path": "assets/references/pancetta.jpg",
+      "sha256": "3db15b0f2656502791079940914f0c50abfb4aca34ffe2273fdd53dd3b61a030",
+      "bytes": 112460,
+      "source": "assets/references/pancetta.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "3db15b0f2656502791079940914f0c50abfb4aca34ffe2273fdd53dd3b61a030"
+    },
+    {
+      "path": "assets/references/paneer.jpg",
+      "sha256": "e80675f3c5d892324b4dde5c79ed74e22002ae02029a9737cc191a018e73935f",
+      "bytes": 216680,
+      "source": "assets/references/paneer.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "e80675f3c5d892324b4dde5c79ed74e22002ae02029a9737cc191a018e73935f"
+    },
+    {
+      "path": "assets/references/paper-towel.jpg",
+      "sha256": "3ae351de424ab4c614d5a14bd06fad185c93fb4acf278b6a516d20f700937da3",
+      "bytes": 125150,
+      "source": "assets/references/paper-towel.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "3ae351de424ab4c614d5a14bd06fad185c93fb4acf278b6a516d20f700937da3"
+    },
+    {
+      "path": "assets/references/paprika.jpg",
+      "sha256": "6cc4b1c962a5a8eb93512890862d96d757f971b99eeb82966b48874ef3ac3c9f",
+      "bytes": 9305,
+      "source": "assets/references/paprika.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "6cc4b1c962a5a8eb93512890862d96d757f971b99eeb82966b48874ef3ac3c9f"
+    },
+    {
+      "path": "assets/references/paring-knife.jpg",
+      "sha256": "e0455205c54db442e50aeb89b3cbd2b40e4996c7b2cf6bb5f79b5bfdf5bd2720",
+      "bytes": 30011,
+      "source": "assets/references/paring-knife.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "e0455205c54db442e50aeb89b3cbd2b40e4996c7b2cf6bb5f79b5bfdf5bd2720"
+    },
+    {
+      "path": "assets/references/parmesan-cheese.jpg",
+      "sha256": "471db4fcf3fc491ed0764a21d86dd8c04f0d51dba8eb3a32e0e8b2eda9030e87",
+      "bytes": 158117,
+      "source": "assets/references/parmesan-cheese.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "471db4fcf3fc491ed0764a21d86dd8c04f0d51dba8eb3a32e0e8b2eda9030e87"
+    },
+    {
+      "path": "assets/references/parsley.jpg",
+      "sha256": "e22c3d4969696a00bb30bdb82810d063740d24a64bb10422c8cf4df5f2bee5b8",
+      "bytes": 67803,
+      "source": "assets/references/parsley.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "e22c3d4969696a00bb30bdb82810d063740d24a64bb10422c8cf4df5f2bee5b8"
+    },
+    {
+      "path": "assets/references/pasta.jpg",
+      "sha256": "083c6d9c243710d1592d3c9c9c41577a953e4ba4e4c45c759ebef3ef30ccd9f2",
+      "bytes": 202605,
+      "source": "assets/references/pasta.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "083c6d9c243710d1592d3c9c9c41577a953e4ba4e4c45c759ebef3ef30ccd9f2"
+    },
+    {
+      "path": "assets/references/pastry-blender.jpg",
+      "sha256": "d62480229ed4efbee7fae5fe1cc09cf451c708dc4581f6cdbd523b0568a74b31",
+      "bytes": 63461,
+      "source": "assets/references/pastry-blender.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "d62480229ed4efbee7fae5fe1cc09cf451c708dc4581f6cdbd523b0568a74b31"
+    },
+    {
+      "path": "assets/references/pastry-brush.jpg",
+      "sha256": "a41ec305a5c117c72dc1be701c76153c2bed6429ecfde2df9c7fbda516dc5c78",
+      "bytes": 25974,
+      "source": "assets/references/pastry-brush.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "a41ec305a5c117c72dc1be701c76153c2bed6429ecfde2df9c7fbda516dc5c78"
+    },
+    {
+      "path": "assets/references/peanut-butter.jpg",
+      "sha256": "88302cb7413b9d8a3642826f591e179b76cddad0f93671f5e051123161df9b41",
+      "bytes": 98251,
+      "source": "assets/references/peanut-butter.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "88302cb7413b9d8a3642826f591e179b76cddad0f93671f5e051123161df9b41"
+    },
+    {
+      "path": "assets/references/peanut-oil.jpg",
+      "sha256": "d2b94b26fdf53d27f42eca03740338a923ba7d5d309e0994dbfac0add4fd1ddb",
+      "bytes": 81039,
+      "source": "assets/references/peanut-oil.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "d2b94b26fdf53d27f42eca03740338a923ba7d5d309e0994dbfac0add4fd1ddb"
+    },
+    {
+      "path": "assets/references/peanut.jpg",
+      "sha256": "f35720c64f676e7253ebcec5c347f29bfa370a90bc525984fb29a21e5893aaf0",
+      "bytes": 76331,
+      "source": "assets/references/peanut.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "f35720c64f676e7253ebcec5c347f29bfa370a90bc525984fb29a21e5893aaf0"
+    },
+    {
+      "path": "assets/references/pecan.jpg",
+      "sha256": "02bdf7e1d8393f6898d34a68df68d75a1f936495611e7dcfd4e245f4853ed5bf",
+      "bytes": 222529,
+      "source": "assets/references/pecan.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "02bdf7e1d8393f6898d34a68df68d75a1f936495611e7dcfd4e245f4853ed5bf"
+    },
+    {
+      "path": "assets/references/pecorino-romano.jpg",
+      "sha256": "fa24c24ef3b805b9ffc27d776fc56b1b5c780774505bcc480d182170203403da",
+      "bytes": 111072,
+      "source": "assets/references/pecorino-romano.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "fa24c24ef3b805b9ffc27d776fc56b1b5c780774505bcc480d182170203403da"
+    },
+    {
+      "path": "assets/references/pickle.jpg",
+      "sha256": "987dc5f74580bb2e286462be14b139e303b41700209bac1a7168dd32589ebab1",
+      "bytes": 198750,
+      "source": "assets/references/pickle.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "987dc5f74580bb2e286462be14b139e303b41700209bac1a7168dd32589ebab1"
+    },
+    {
+      "path": "assets/references/piping-bag.jpg",
+      "sha256": "114983346cf31e98082bc20ceafdeb7aa7ad777583c4a6e34d4ce4d1440404e8",
+      "bytes": 57717,
+      "source": "assets/references/piping-bag.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "114983346cf31e98082bc20ceafdeb7aa7ad777583c4a6e34d4ce4d1440404e8"
+    },
+    {
+      "path": "assets/references/pizza-peel.jpg",
+      "sha256": "038236a5c6074c414c3db9721198ee4bfbeafbc5b07250610ab63d3344c45c2e",
+      "bytes": 10518,
+      "source": "assets/references/pizza-peel.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "038236a5c6074c414c3db9721198ee4bfbeafbc5b07250610ab63d3344c45c2e"
+    },
+    {
+      "path": "assets/references/pizza-stone.jpg",
+      "sha256": "af0d6c1a081731cd078b1a0b768c22f36184a083cea942914c935069ea4726f2",
+      "bytes": 60270,
+      "source": "assets/references/pizza-stone.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "af0d6c1a081731cd078b1a0b768c22f36184a083cea942914c935069ea4726f2"
+    },
+    {
+      "path": "assets/references/pizza-wheel.jpg",
+      "sha256": "1ae2aeb6a0ae613ea6192038c0bb904a11ed41f942cc838549d5c0a1afea7f4d",
+      "bytes": 27965,
+      "source": "assets/references/pizza-wheel.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "1ae2aeb6a0ae613ea6192038c0bb904a11ed41f942cc838549d5c0a1afea7f4d"
+    },
+    {
+      "path": "assets/references/plastic-wrap.jpg",
+      "sha256": "185e0c94237946c54fbfb0e519cde8aeb10c01e7dbd4c98b61ee226c363c4025",
+      "bytes": 30475,
+      "source": "assets/references/plastic-wrap.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "185e0c94237946c54fbfb0e519cde8aeb10c01e7dbd4c98b61ee226c363c4025"
+    },
+    {
+      "path": "assets/references/plum-tomato.jpg",
+      "sha256": "6a703ee13e93e06621c758a066094ea065f543e4328058489de6c3460a28ee52",
+      "bytes": 78874,
+      "source": "assets/references/plum-tomato.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "6a703ee13e93e06621c758a066094ea065f543e4328058489de6c3460a28ee52"
+    },
+    {
+      "path": "assets/references/poppy-seeds.jpg",
+      "sha256": "0b979666fe53f7271e5bf75939bc7780e92a18ae367d71cc1c96573aabb89627",
+      "bytes": 251097,
+      "source": "assets/references/poppy-seeds.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "0b979666fe53f7271e5bf75939bc7780e92a18ae367d71cc1c96573aabb89627"
+    },
+    {
+      "path": "assets/references/pork-belly.jpg",
+      "sha256": "63254583ca21e909be72d6ebdaad1461087dc57212cec39bea786d0880eeae5e",
+      "bytes": 99199,
+      "source": "assets/references/pork-belly.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "63254583ca21e909be72d6ebdaad1461087dc57212cec39bea786d0880eeae5e"
+    },
+    {
+      "path": "assets/references/pork-chop.jpg",
+      "sha256": "e1bece7d594213bbefd4f06c148420ad2524bb0a54cacd678e51ad2c56f4bbcd",
+      "bytes": 142465,
+      "source": "assets/references/pork-chop.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "e1bece7d594213bbefd4f06c148420ad2524bb0a54cacd678e51ad2c56f4bbcd"
+    },
+    {
+      "path": "assets/references/pork-shoulder.jpg",
+      "sha256": "9ea5f147a46aa692ee33f62ef2ced3c2390fc0414a6f95d645a94159b12b9c42",
+      "bytes": 104581,
+      "source": "assets/references/pork-shoulder.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "9ea5f147a46aa692ee33f62ef2ced3c2390fc0414a6f95d645a94159b12b9c42"
+    },
+    {
+      "path": "assets/references/pork.jpg",
+      "sha256": "63254583ca21e909be72d6ebdaad1461087dc57212cec39bea786d0880eeae5e",
+      "bytes": 99199,
+      "source": "assets/references/pork.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "63254583ca21e909be72d6ebdaad1461087dc57212cec39bea786d0880eeae5e"
+    },
+    {
+      "path": "assets/references/potato-masher.jpg",
+      "sha256": "15e8844130a31a250871e9bff5ccecaaddee9a1140bd26f34c31b310f8c1a304",
+      "bytes": 23562,
+      "source": "assets/references/potato-masher.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "15e8844130a31a250871e9bff5ccecaaddee9a1140bd26f34c31b310f8c1a304"
+    },
+    {
+      "path": "assets/references/potato-ricer.jpg",
+      "sha256": "86c4527ed05d58b85c734fa288c311fe99650e8a65ac5d4b63ed5383a808bfa9",
+      "bytes": 163215,
+      "source": "assets/references/potato-ricer.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "86c4527ed05d58b85c734fa288c311fe99650e8a65ac5d4b63ed5383a808bfa9"
+    },
+    {
+      "path": "assets/references/potato.jpg",
+      "sha256": "0f1542a52914128df1a8e0f1b5f30f4c7bf73295d7be8762360e330e444bd3e1",
+      "bytes": 186632,
+      "source": "assets/references/potato.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "0f1542a52914128df1a8e0f1b5f30f4c7bf73295d7be8762360e330e444bd3e1"
+    },
+    {
+      "path": "assets/references/puff-pastry.jpg",
+      "sha256": "ca9e417d822edaf07fac0ede197c2add81febbb318cc6f4e0a6b473a4f84f2d5",
+      "bytes": 208745,
+      "source": "assets/references/puff-pastry.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "ca9e417d822edaf07fac0ede197c2add81febbb318cc6f4e0a6b473a4f84f2d5"
+    },
+    {
+      "path": "assets/references/quark.jpg",
+      "sha256": "1176c668d673c76d0d4112a53a3ed50a226a33947ec7030962f449e61b5b454a",
+      "bytes": 57701,
+      "source": "assets/references/quark.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "1176c668d673c76d0d4112a53a3ed50a226a33947ec7030962f449e61b5b454a"
+    },
+    {
+      "path": "assets/references/radish.jpg",
+      "sha256": "a72aa52ac93ff4a0eb1e2e0c296e2292f7b1adfaba38a36d365d26db8faaadc0",
+      "bytes": 166818,
+      "source": "assets/references/radish.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "a72aa52ac93ff4a0eb1e2e0c296e2292f7b1adfaba38a36d365d26db8faaadc0"
+    },
+    {
+      "path": "assets/references/raisins.jpg",
+      "sha256": "232884821af43346f86c9f83eebeec37243d6035624bf920e0ecc650f08df026",
+      "bytes": 151165,
+      "source": "assets/references/raisins.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "232884821af43346f86c9f83eebeec37243d6035624bf920e0ecc650f08df026"
+    },
+    {
+      "path": "assets/references/ramen-noodles.jpg",
+      "sha256": "1050331374fadfb37c3dbe3f7f1471d15985e9798a3d30b1c83de4eca4b5bc21",
+      "bytes": 192739,
+      "source": "assets/references/ramen-noodles.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "1050331374fadfb37c3dbe3f7f1471d15985e9798a3d30b1c83de4eca4b5bc21"
+    },
+    {
+      "path": "assets/references/red-bell-pepper.jpg",
+      "sha256": "4e9231738ae417703fc35765ffa5bd91486adabe1a00e4b63f7a89ff2f3041fa",
+      "bytes": 88607,
+      "source": "assets/references/red-bell-pepper.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "4e9231738ae417703fc35765ffa5bd91486adabe1a00e4b63f7a89ff2f3041fa"
+    },
+    {
+      "path": "assets/references/red-chilli.jpg",
+      "sha256": "a6e347013a636da3f3d7782e04b098128e2f1b0422d073c3af60db496b80bfef",
+      "bytes": 316242,
+      "source": "assets/references/red-chilli.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "a6e347013a636da3f3d7782e04b098128e2f1b0422d073c3af60db496b80bfef"
+    },
+    {
+      "path": "assets/references/red-onion.jpg",
+      "sha256": "0575f218fb62d82cb9b5360b5722e8086074815d341101e2ebd23b2fc7a9a680",
+      "bytes": 105154,
+      "source": "assets/references/red-onion.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "0575f218fb62d82cb9b5360b5722e8086074815d341101e2ebd23b2fc7a9a680"
+    },
+    {
+      "path": "assets/references/red-pepper-flakes.jpg",
+      "sha256": "3b0e24db93171ea81433c044dece8ecbe51f93a679bb167a92c0cfd408cbd4a3",
+      "bytes": 152251,
+      "source": "assets/references/red-pepper-flakes.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "3b0e24db93171ea81433c044dece8ecbe51f93a679bb167a92c0cfd408cbd4a3"
+    },
+    {
+      "path": "assets/references/refrigerator.jpg",
+      "sha256": "83f1071d7197ae0206dfab1c8a3d8257db78ffff58d939a71abe5425371b086f",
+      "bytes": 73856,
+      "source": "assets/references/refrigerator.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "83f1071d7197ae0206dfab1c8a3d8257db78ffff58d939a71abe5425371b086f"
+    },
+    {
+      "path": "assets/references/rice-cooker.jpg",
+      "sha256": "62a16bc399f5e64411e685c24f78c95d10a528456fc8cd0187fec9a48e73d164",
+      "bytes": 61891,
+      "source": "assets/references/rice-cooker.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "62a16bc399f5e64411e685c24f78c95d10a528456fc8cd0187fec9a48e73d164"
+    },
+    {
+      "path": "assets/references/rice-noodles.jpg",
+      "sha256": "76592545b861ba742ade76f04a0b7dd2b343292b69540e714e18ee4014cc74ae",
+      "bytes": 160153,
+      "source": "assets/references/rice-noodles.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "76592545b861ba742ade76f04a0b7dd2b343292b69540e714e18ee4014cc74ae"
+    },
+    {
+      "path": "assets/references/rice-vinegar.jpg",
+      "sha256": "70d7316224a6a1fcf677dc4e92998f1c1beeb2694d4d73095ece45533bd98369",
+      "bytes": 88442,
+      "source": "assets/references/rice-vinegar.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "70d7316224a6a1fcf677dc4e92998f1c1beeb2694d4d73095ece45533bd98369"
+    },
+    {
+      "path": "assets/references/rice.jpg",
+      "sha256": "b5c1b2d0a964232f3371509cf1dae4d7e12a2e38f1f992fcd4aa79c795d6e404",
+      "bytes": 150279,
+      "source": "assets/references/rice.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "b5c1b2d0a964232f3371509cf1dae4d7e12a2e38f1f992fcd4aa79c795d6e404"
+    },
+    {
+      "path": "assets/references/ricotta.jpg",
+      "sha256": "d51874fe6383284acf1637e908540f6c13879d69e51b7e957670296ffadc70f7",
+      "bytes": 102775,
+      "source": "assets/references/ricotta.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "d51874fe6383284acf1637e908540f6c13879d69e51b7e957670296ffadc70f7"
+    },
+    {
+      "path": "assets/references/roast.jpg",
+      "sha256": "b2a1aa4b55031a3da7ef64dbc669a0c6f6786f6a3e87e4c32aa50cd3a72dd70e",
+      "bytes": 152626,
+      "source": "assets/references/roast.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "b2a1aa4b55031a3da7ef64dbc669a0c6f6786f6a3e87e4c32aa50cd3a72dd70e"
+    },
+    {
+      "path": "assets/references/roasting-tin.jpg",
+      "sha256": "bdf49521c27dce87151bb8ed4ef8cee4b1147e7587af521d4888db4a2302037f",
+      "bytes": 63530,
+      "source": "assets/references/roasting-tin.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "bdf49521c27dce87151bb8ed4ef8cee4b1147e7587af521d4888db4a2302037f"
+    },
+    {
+      "path": "assets/references/rocks-glass.jpg",
+      "sha256": "01e356da733fa67bd472d2b83a8914ad795a41ac3cf7f2f6e3e02b7e1fea8a4a",
+      "bytes": 165322,
+      "source": "assets/references/rocks-glass.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "01e356da733fa67bd472d2b83a8914ad795a41ac3cf7f2f6e3e02b7e1fea8a4a"
+    },
+    {
+      "path": "assets/references/rolling-pin.jpg",
+      "sha256": "c45a994df846bd244b63cf8f8857f23f8a69afe2469fff0f82b215c58c08a425",
+      "bytes": 70774,
+      "source": "assets/references/rolling-pin.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "c45a994df846bd244b63cf8f8857f23f8a69afe2469fff0f82b215c58c08a425"
+    },
+    {
+      "path": "assets/references/rookworst.jpg",
+      "sha256": "cf8eae7bd6d5ba21e7f4048bc0d223958f153ab85e4289e8ae7ca4477bc59c77",
+      "bytes": 116872,
+      "source": "assets/references/rookworst.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "cf8eae7bd6d5ba21e7f4048bc0d223958f153ab85e4289e8ae7ca4477bc59c77"
+    },
+    {
+      "path": "assets/references/rosemary.jpg",
+      "sha256": "3009fdba0c16f9d602617bfc0b9aa84be0bbb847b952c748c735670abcecd601",
+      "bytes": 106316,
+      "source": "assets/references/rosemary.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "3009fdba0c16f9d602617bfc0b9aa84be0bbb847b952c748c735670abcecd601"
+    },
+    {
+      "path": "assets/references/rum.jpg",
+      "sha256": "ef6af94c9c6173b15e7c3bae1ef2d4afe0b2e1ff22f0f9a17432c2c23cfd8234",
+      "bytes": 48096,
+      "source": "assets/references/rum.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "ef6af94c9c6173b15e7c3bae1ef2d4afe0b2e1ff22f0f9a17432c2c23cfd8234"
+    },
+    {
+      "path": "assets/references/saffron.jpg",
+      "sha256": "f5097dda8bf6b766aaf11f8cd39461a7587570e63d2d58044a899a31d61ea6e7",
+      "bytes": 119570,
+      "source": "assets/references/saffron.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "f5097dda8bf6b766aaf11f8cd39461a7587570e63d2d58044a899a31d61ea6e7"
+    },
+    {
+      "path": "assets/references/sage.jpg",
+      "sha256": "85e2af3bbdacea196c1786db2329bb2d525c7b322cc1f6159ec18e14080baa45",
+      "bytes": 54855,
+      "source": "assets/references/sage.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "85e2af3bbdacea196c1786db2329bb2d525c7b322cc1f6159ec18e14080baa45"
+    },
+    {
+      "path": "assets/references/salad-spinner.jpg",
+      "sha256": "8a828eef1f02a02004f98e6a099ec7daaa0559f52049ede03237f6194524978e",
+      "bytes": 126253,
+      "source": "assets/references/salad-spinner.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "8a828eef1f02a02004f98e6a099ec7daaa0559f52049ede03237f6194524978e"
+    },
+    {
+      "path": "assets/references/salmon.jpg",
+      "sha256": "00d154e738275c6dbae9a4b99514394afc4e87293c48b521630fa7ddb68d5886",
+      "bytes": 43854,
+      "source": "assets/references/salmon.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "00d154e738275c6dbae9a4b99514394afc4e87293c48b521630fa7ddb68d5886"
+    },
+    {
+      "path": "assets/references/salt-pork.jpg",
+      "sha256": "5295ba583277fc4f6148832f62b9fe4f1ac3484301c530e31102c097e3527fc2",
+      "bytes": 115334,
+      "source": "assets/references/salt-pork.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "5295ba583277fc4f6148832f62b9fe4f1ac3484301c530e31102c097e3527fc2"
+    },
+    {
+      "path": "assets/references/salt.jpg",
+      "sha256": "5c0022fc223e3172672f75f2b3296f4670d380ee0ab87c49e697f5617518e819",
+      "bytes": 68638,
+      "source": "assets/references/salt.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "5c0022fc223e3172672f75f2b3296f4670d380ee0ab87c49e697f5617518e819"
+    },
+    {
+      "path": "assets/references/sardines.jpg",
+      "sha256": "b8a7966df29a4507b21bcd6b0bfd1ede6d11c2a5e7d246ba68d61e3d7756d0a9",
+      "bytes": 98442,
+      "source": "assets/references/sardines.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "b8a7966df29a4507b21bcd6b0bfd1ede6d11c2a5e7d246ba68d61e3d7756d0a9"
+    },
+    {
+      "path": "assets/references/saucepan.jpg",
+      "sha256": "6180f0d7598ad547fbaadca428a057556755e7ff55d2dfe67c30403ea9426a53",
+      "bytes": 216796,
+      "source": "assets/references/saucepan.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "6180f0d7598ad547fbaadca428a057556755e7ff55d2dfe67c30403ea9426a53"
+    },
+    {
+      "path": "assets/references/savoiardi-biscuits.jpg",
+      "sha256": "32c6d4811c1fa567fdb1d2ca786d5883a478fa2ffe533d557cd197cd88c9cfef",
+      "bytes": 107824,
+      "source": "assets/references/savoiardi-biscuits.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "32c6d4811c1fa567fdb1d2ca786d5883a478fa2ffe533d557cd197cd88c9cfef"
+    },
+    {
+      "path": "assets/references/scamorza-cheese.jpg",
+      "sha256": "daf5402c4ef84e677028f7619339174df2a154c9e3dee99659dc765abaa14d3d",
+      "bytes": 78937,
+      "source": "assets/references/scamorza-cheese.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "daf5402c4ef84e677028f7619339174df2a154c9e3dee99659dc765abaa14d3d"
+    },
+    {
+      "path": "assets/references/scotch-whisky.jpg",
+      "sha256": "052cf65fa59099cde8ea1c4bb29aa6dc8f7eba5424012e76b0a410a379ba594d",
+      "bytes": 89706,
+      "source": "assets/references/scotch-whisky.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "052cf65fa59099cde8ea1c4bb29aa6dc8f7eba5424012e76b0a410a379ba594d"
+    },
+    {
+      "path": "assets/references/seafood.jpg",
+      "sha256": "25021103a547b240efca461c5a8ea96bc799adc1d13a42ba6052dd392a462824",
+      "bytes": 221591,
+      "source": "assets/references/seafood.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "25021103a547b240efca461c5a8ea96bc799adc1d13a42ba6052dd392a462824"
+    },
+    {
+      "path": "assets/references/sear.jpg",
+      "sha256": "9d79412e2cb2e401f82fdbb785803df31d148f44372de1d1c9f6db8456be04a4",
+      "bytes": 150061,
+      "source": "assets/references/sear.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "9d79412e2cb2e401f82fdbb785803df31d148f44372de1d1c9f6db8456be04a4"
+    },
+    {
+      "path": "assets/references/selection.json",
+      "sha256": "08ca415da7e15a585a139c454d8583b7ea9d6ed7b138f1af0f8a1c35bff8984c",
+      "bytes": 537623,
+      "source": "assets/references/selection.json",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "08ca415da7e15a585a139c454d8583b7ea9d6ed7b138f1af0f8a1c35bff8984c"
+    },
+    {
+      "path": "assets/references/serrano-chilies.jpg",
+      "sha256": "2474c40dd4e2adf86f533bb1115c5465872f3d83e8434fa9c128aa144be13c0c",
+      "bytes": 240239,
+      "source": "assets/references/serrano-chilies.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "2474c40dd4e2adf86f533bb1115c5465872f3d83e8434fa9c128aa144be13c0c"
+    },
+    {
+      "path": "assets/references/sesame-oil.jpg",
+      "sha256": "2f2d43e14e62ec1d25bb9eea9e2a7800e61239e5c54be685337aa9e51792afc1",
+      "bytes": 18699,
+      "source": "assets/references/sesame-oil.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "2f2d43e14e62ec1d25bb9eea9e2a7800e61239e5c54be685337aa9e51792afc1"
+    },
+    {
+      "path": "assets/references/sesame-seeds.jpg",
+      "sha256": "0f35c862990f8376b7f78277440bc973d1e995882c24d13f6f5ebef0c377a845",
+      "bytes": 139685,
+      "source": "assets/references/sesame-seeds.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "0f35c862990f8376b7f78277440bc973d1e995882c24d13f6f5ebef0c377a845"
+    },
+    {
+      "path": "assets/references/shallot.jpg",
+      "sha256": "b007327f66a4b36e5ced17d2c859b2cbd475bc482236e8817faac3b1527e969c",
+      "bytes": 93096,
+      "source": "assets/references/shallot.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "b007327f66a4b36e5ced17d2c859b2cbd475bc482236e8817faac3b1527e969c"
+    },
+    {
+      "path": "assets/references/shrimp.jpg",
+      "sha256": "75ca97954f57c222e0cf9c1c88da8621e5bdcb5a6e6c66646617ae6b02b19cf8",
+      "bytes": 177436,
+      "source": "assets/references/shrimp.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "75ca97954f57c222e0cf9c1c88da8621e5bdcb5a6e6c66646617ae6b02b19cf8"
+    },
+    {
+      "path": "assets/references/skewer.jpg",
+      "sha256": "68de5f479743de2a2302d03a017d29093142ffd9920d978065ea961582d0f08b",
+      "bytes": 142026,
+      "source": "assets/references/skewer.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "68de5f479743de2a2302d03a017d29093142ffd9920d978065ea961582d0f08b"
+    },
+    {
+      "path": "assets/references/slotted-spoon.jpg",
+      "sha256": "4fe201aa2ab12c1d117589aaceb8e3fc720e8d3bb7393b3f2055e93f966585ae",
+      "bytes": 213677,
+      "source": "assets/references/slotted-spoon.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "4fe201aa2ab12c1d117589aaceb8e3fc720e8d3bb7393b3f2055e93f966585ae"
+    },
+    {
+      "path": "assets/references/slow-cooker.jpg",
+      "sha256": "c0f3cb05ffc0d190ad0b62fb9caed22decf97f75b725c3193fe3b2d394fd3dfd",
+      "bytes": 116247,
+      "source": "assets/references/slow-cooker.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "c0f3cb05ffc0d190ad0b62fb9caed22decf97f75b725c3193fe3b2d394fd3dfd"
+    },
+    {
+      "path": "assets/references/snail.jpg",
+      "sha256": "f0c6f0bd7b3769a2f0c80057740d51922b0700c6ef13c14a440337c8906bbf50",
+      "bytes": 66386,
+      "source": "assets/references/snail.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "f0c6f0bd7b3769a2f0c80057740d51922b0700c6ef13c14a440337c8906bbf50"
+    },
+    {
+      "path": "assets/references/soy-sauce.jpg",
+      "sha256": "7a9fef2de36cf409f365c046ec933c520db7d49c6973e6985d9a788b138fdf63",
+      "bytes": 41518,
+      "source": "assets/references/soy-sauce.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "7a9fef2de36cf409f365c046ec933c520db7d49c6973e6985d9a788b138fdf63"
+    },
+    {
+      "path": "assets/references/spaghetti.jpg",
+      "sha256": "7d9d7fc5e708781d2261c47ebb5651dd319a35e448b013f04d5b682e781ce42f",
+      "bytes": 116191,
+      "source": "assets/references/spaghetti.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "7d9d7fc5e708781d2261c47ebb5651dd319a35e448b013f04d5b682e781ce42f"
+    },
+    {
+      "path": "assets/references/spider-strainer.jpg",
+      "sha256": "17935d80f52accde412611a06dc3a80e34b7f3d1bb110a0e98170569a8283e95",
+      "bytes": 123159,
+      "source": "assets/references/spider-strainer.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "17935d80f52accde412611a06dc3a80e34b7f3d1bb110a0e98170569a8283e95"
+    },
+    {
+      "path": "assets/references/spinach.jpg",
+      "sha256": "9ba3b95c48c56713cf549b36e618b3a9175a34db9adca66d9b1abe7d1ee7785d",
+      "bytes": 180331,
+      "source": "assets/references/spinach.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "9ba3b95c48c56713cf549b36e618b3a9175a34db9adca66d9b1abe7d1ee7785d"
+    },
+    {
+      "path": "assets/references/split-peas.jpg",
+      "sha256": "d6330ec210a569225f048abdddaadbfb06e9c91d0102ee77f531c5357d56da16",
+      "bytes": 218485,
+      "source": "assets/references/split-peas.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "d6330ec210a569225f048abdddaadbfb06e9c91d0102ee77f531c5357d56da16"
+    },
+    {
+      "path": "assets/references/spoon.jpg",
+      "sha256": "f7c1eb499df4a147d5b202704fba15d06013d8674fcbc13a4a12858094d5c184",
+      "bytes": 180502,
+      "source": "assets/references/spoon.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "f7c1eb499df4a147d5b202704fba15d06013d8674fcbc13a4a12858094d5c184"
+    },
+    {
+      "path": "assets/references/spring-onion.jpg",
+      "sha256": "8946b2c8f8758596c9021767c11fdb6cf0f4c37eab28a8630b4676bbd34bea6e",
+      "bytes": 106591,
+      "source": "assets/references/spring-onion.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "8946b2c8f8758596c9021767c11fdb6cf0f4c37eab28a8630b4676bbd34bea6e"
+    },
+    {
+      "path": "assets/references/springform-tin.jpg",
+      "sha256": "a23053ec018da95fe86d0183fa1a30dc83b4e1ea8d7e6290b5a1f52530ffaec6",
+      "bytes": 183760,
+      "source": "assets/references/springform-tin.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "a23053ec018da95fe86d0183fa1a30dc83b4e1ea8d7e6290b5a1f52530ffaec6"
+    },
+    {
+      "path": "assets/references/sriracha.jpg",
+      "sha256": "dcf16aa7a4f6af4ff9afc3f8370304d1a999a3ef8f8cd876f9a75d7ed40032d7",
+      "bytes": 58179,
+      "source": "assets/references/sriracha.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "dcf16aa7a4f6af4ff9afc3f8370304d1a999a3ef8f8cd876f9a75d7ed40032d7"
+    },
+    {
+      "path": "assets/references/star-anise.jpg",
+      "sha256": "124471807e35ff74c085e43785472ada06f85dc38fb2dfc0daff23f96395bc12",
+      "bytes": 103929,
+      "source": "assets/references/star-anise.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "124471807e35ff74c085e43785472ada06f85dc38fb2dfc0daff23f96395bc12"
+    },
+    {
+      "path": "assets/references/stock.jpg",
+      "sha256": "2fe616cb73ac6baebf40c4de0bbdd2a5c85a7d8537f4836a5414e83045d1dd91",
+      "bytes": 196447,
+      "source": "assets/references/stock.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "2fe616cb73ac6baebf40c4de0bbdd2a5c85a7d8537f4836a5414e83045d1dd91"
+    },
+    {
+      "path": "assets/references/sumac.jpg",
+      "sha256": "67fbd09ec05e10c3a9fe18a60fc76ada4f90c156d30a97e6055438a83c501d34",
+      "bytes": 74013,
+      "source": "assets/references/sumac.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "67fbd09ec05e10c3a9fe18a60fc76ada4f90c156d30a97e6055438a83c501d34"
+    },
+    {
+      "path": "assets/references/sunflower-seeds.jpg",
+      "sha256": "5dcde28ccd890799447560658649cd5b3d5548ff30c6a91288f85ae3ea02510f",
+      "bytes": 62658,
+      "source": "assets/references/sunflower-seeds.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "5dcde28ccd890799447560658649cd5b3d5548ff30c6a91288f85ae3ea02510f"
+    },
+    {
+      "path": "assets/references/sweet-potato.jpg",
+      "sha256": "b1380633b24ab13dd71ef30534ac2abfc4830aa3db6c08ca97663d7940558c9f",
+      "bytes": 164144,
+      "source": "assets/references/sweet-potato.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "b1380633b24ab13dd71ef30534ac2abfc4830aa3db6c08ca97663d7940558c9f"
+    },
+    {
+      "path": "assets/references/tagine.jpg",
+      "sha256": "f9b5799fc2b34d364da4c7bd3f20877e82518ee0803033879f4c1a07c932295f",
+      "bytes": 215466,
+      "source": "assets/references/tagine.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "f9b5799fc2b34d364da4c7bd3f20877e82518ee0803033879f4c1a07c932295f"
+    },
+    {
+      "path": "assets/references/tahini.jpg",
+      "sha256": "7f7e8971157dcd6327f0936fd51effb2299024a1de403070786eac358bbde993",
+      "bytes": 123197,
+      "source": "assets/references/tahini.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "7f7e8971157dcd6327f0936fd51effb2299024a1de403070786eac358bbde993"
+    },
+    {
+      "path": "assets/references/tandoor.jpg",
+      "sha256": "38106e0ab9a7d8cd760c1b9d7932bd2b0b95dd3ef9f1509e441fd06a9da77b76",
+      "bytes": 93881,
+      "source": "assets/references/tandoor.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "38106e0ab9a7d8cd760c1b9d7932bd2b0b95dd3ef9f1509e441fd06a9da77b76"
+    },
+    {
+      "path": "assets/references/tarragon.jpg",
+      "sha256": "065badd01cddd13245dfb55f386f12b99728d488098523e6c4a3933d4bbc6882",
+      "bytes": 26220,
+      "source": "assets/references/tarragon.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "065badd01cddd13245dfb55f386f12b99728d488098523e6c4a3933d4bbc6882"
+    },
+    {
+      "path": "assets/references/tawa.jpg",
+      "sha256": "c6c4b277c785c0d47644049d2c64bb56678beaaaa756fc387e6d553307c17d00",
+      "bytes": 161052,
+      "source": "assets/references/tawa.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "c6c4b277c785c0d47644049d2c64bb56678beaaaa756fc387e6d553307c17d00"
+    },
+    {
+      "path": "assets/references/tea-infuser.jpg",
+      "sha256": "a4ba762aedf8eb1158e0fe4db254b21da309e72638fe0a2d11b02689896a9703",
+      "bytes": 90278,
+      "source": "assets/references/tea-infuser.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "a4ba762aedf8eb1158e0fe4db254b21da309e72638fe0a2d11b02689896a9703"
+    },
+    {
+      "path": "assets/references/tea-strainer.jpg",
+      "sha256": "b915508a6154e8ffc2ed132cccf417953ebfee7f36df9cbeba6170b507cdfec7",
+      "bytes": 6297,
+      "source": "assets/references/tea-strainer.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "b915508a6154e8ffc2ed132cccf417953ebfee7f36df9cbeba6170b507cdfec7"
+    },
+    {
+      "path": "assets/references/thermos.jpg",
+      "sha256": "9dca576c68ddf61be69a9d7336da4721ab847e582ac7367b4dd917acf44573a7",
+      "bytes": 109848,
+      "source": "assets/references/thermos.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "9dca576c68ddf61be69a9d7336da4721ab847e582ac7367b4dd917acf44573a7"
+    },
+    {
+      "path": "assets/references/thyme.jpg",
+      "sha256": "fbbfcf2b8e9cbdffb74f2a995936087f52f6159871dc0a03de8a8abead0ff2c1",
+      "bytes": 115994,
+      "source": "assets/references/thyme.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "fbbfcf2b8e9cbdffb74f2a995936087f52f6159871dc0a03de8a8abead0ff2c1"
+    },
+    {
+      "path": "assets/references/tiki-mug.jpg",
+      "sha256": "ecc8ba463f984c9cc84900e8d443bee25ee0cb9d04bc0530a3a64f52c6d33200",
+      "bytes": 96426,
+      "source": "assets/references/tiki-mug.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "ecc8ba463f984c9cc84900e8d443bee25ee0cb9d04bc0530a3a64f52c6d33200"
+    },
+    {
+      "path": "assets/references/toast.jpg",
+      "sha256": "79382b4a34af8070edaa58d196009f174e68712e31c0d22bf8d45d3ee14b7f30",
+      "bytes": 172730,
+      "source": "assets/references/toast.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "79382b4a34af8070edaa58d196009f174e68712e31c0d22bf8d45d3ee14b7f30"
+    },
+    {
+      "path": "assets/references/toaster.jpg",
+      "sha256": "e5162b94f37af8506b8b6e2958551ab19f92f0802eebab95ab0c7d99c91edd9b",
+      "bytes": 72253,
+      "source": "assets/references/toaster.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "e5162b94f37af8506b8b6e2958551ab19f92f0802eebab95ab0c7d99c91edd9b"
+    },
+    {
+      "path": "assets/references/tofu.jpg",
+      "sha256": "b346667f9a1ca3c40c14ad46e726b052172fc8e2f8c740274b71e1999a7faa89",
+      "bytes": 140985,
+      "source": "assets/references/tofu.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "b346667f9a1ca3c40c14ad46e726b052172fc8e2f8c740274b71e1999a7faa89"
+    },
+    {
+      "path": "assets/references/tomato-paste.jpg",
+      "sha256": "f096033c96cce5216e1b1879a011fe627d32b186e7500283bc707fd4dc357b9c",
+      "bytes": 80492,
+      "source": "assets/references/tomato-paste.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "f096033c96cce5216e1b1879a011fe627d32b186e7500283bc707fd4dc357b9c"
+    },
+    {
+      "path": "assets/references/tomato-sauce.jpg",
+      "sha256": "47a17f2eead1c9d45ce2d02e1bfa2df2725e7e41cf156df1383133468bb45f60",
+      "bytes": 135228,
+      "source": "assets/references/tomato-sauce.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "47a17f2eead1c9d45ce2d02e1bfa2df2725e7e41cf156df1383133468bb45f60"
+    },
+    {
+      "path": "assets/references/tomato.jpg",
+      "sha256": "d7bdaa811f39c225fae9fdff4993900427ea7a893f1f520fc4269418b3633d49",
+      "bytes": 262918,
+      "source": "assets/references/tomato.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "d7bdaa811f39c225fae9fdff4993900427ea7a893f1f520fc4269418b3633d49"
+    },
+    {
+      "path": "assets/references/tongs.jpg",
+      "sha256": "bea480f2eb885957ed5225f175934c29f60d2254605c23e8695c6bf1d53f600a",
+      "bytes": 22734,
+      "source": "assets/references/tongs.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "bea480f2eb885957ed5225f175934c29f60d2254605c23e8695c6bf1d53f600a"
+    },
+    {
+      "path": "assets/references/tonic-water.jpg",
+      "sha256": "64e0871b438625fb59dc4028593b60844208f644e7979e0d5e3d6e61b9478d32",
+      "bytes": 135392,
+      "source": "assets/references/tonic-water.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "64e0871b438625fb59dc4028593b60844208f644e7979e0d5e3d6e61b9478d32"
+    },
+    {
+      "path": "assets/references/toothpick.jpg",
+      "sha256": "b921df95ac027422b8d77aaaf7bc06a671daeac52d3c9746150c307028eced39",
+      "bytes": 87389,
+      "source": "assets/references/toothpick.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "b921df95ac027422b8d77aaaf7bc06a671daeac52d3c9746150c307028eced39"
+    },
+    {
+      "path": "assets/references/tortilla-press.jpg",
+      "sha256": "0510537fdc896191adb541258c61751e62b380ec778f29ff7630d6d8d4f4eab2",
+      "bytes": 244466,
+      "source": "assets/references/tortilla-press.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "0510537fdc896191adb541258c61751e62b380ec778f29ff7630d6d8d4f4eab2"
+    },
+    {
+      "path": "assets/references/trout.jpg",
+      "sha256": "cc28d2eece89f8411774d10bc89e4133892537586266658d0ccb4b92e100b7bc",
+      "bytes": 50637,
+      "source": "assets/references/trout.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "cc28d2eece89f8411774d10bc89e4133892537586266658d0ccb4b92e100b7bc"
+    },
+    {
+      "path": "assets/references/turkey.jpg",
+      "sha256": "f78dc55a50c5117981be4dcb075067f1011e372b1d486250484e051bf9d1480a",
+      "bytes": 133373,
+      "source": "assets/references/turkey.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "f78dc55a50c5117981be4dcb075067f1011e372b1d486250484e051bf9d1480a"
+    },
+    {
+      "path": "assets/references/turmeric.jpg",
+      "sha256": "918d97801867912c448a88bb26557dffdb94ace1e719cffbd9185ebd240f96c0",
+      "bytes": 71497,
+      "source": "assets/references/turmeric.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "918d97801867912c448a88bb26557dffdb94ace1e719cffbd9185ebd240f96c0"
+    },
+    {
+      "path": "assets/references/turnip.jpg",
+      "sha256": "7230cea7bda4072b46dd6a3555e9bd7e9da4526dd4678caab939d54a88bf8cf0",
+      "bytes": 93437,
+      "source": "assets/references/turnip.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "7230cea7bda4072b46dd6a3555e9bd7e9da4526dd4678caab939d54a88bf8cf0"
+    },
+    {
+      "path": "assets/references/vacuum-sealer.jpg",
+      "sha256": "783fc696753ec1dd53729c181465d71ca3cbecc4b3a0e57f0c0a4812a5c72903",
+      "bytes": 143873,
+      "source": "assets/references/vacuum-sealer.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "783fc696753ec1dd53729c181465d71ca3cbecc4b3a0e57f0c0a4812a5c72903"
+    },
+    {
+      "path": "assets/references/vanilla-extract.jpg",
+      "sha256": "ad018b9e59f645de2144bb1a792c8ceea4dc5be046912211c08a52ae1fce4855",
+      "bytes": 18913,
+      "source": "assets/references/vanilla-extract.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "ad018b9e59f645de2144bb1a792c8ceea4dc5be046912211c08a52ae1fce4855"
+    },
+    {
+      "path": "assets/references/vanilla-sugar.jpg",
+      "sha256": "2d6ba0b930b8307e4ab7dabbd417b6588f79801128aeb095ddeff4cf2e0b4094",
+      "bytes": 88701,
+      "source": "assets/references/vanilla-sugar.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "2d6ba0b930b8307e4ab7dabbd417b6588f79801128aeb095ddeff4cf2e0b4094"
+    },
+    {
+      "path": "assets/references/vegetable-peeler.jpg",
+      "sha256": "9be775931f951d400ff7545c470d2d00d8e05101aaca07f7ba6f2ddb7e45a5cd",
+      "bytes": 45540,
+      "source": "assets/references/vegetable-peeler.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "9be775931f951d400ff7545c470d2d00d8e05101aaca07f7ba6f2ddb7e45a5cd"
+    },
+    {
+      "path": "assets/references/venison.jpg",
+      "sha256": "479bd42ef7ef6b776c2201838a633f16b529f0a4e7c7ac48a7861116f1e4e08e",
+      "bytes": 57991,
+      "source": "assets/references/venison.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "479bd42ef7ef6b776c2201838a633f16b529f0a4e7c7ac48a7861116f1e4e08e"
+    },
+    {
+      "path": "assets/references/vermicelli.jpg",
+      "sha256": "ce1bfbf761bb29b4395c2fcb1f696502d8e2142c75340f4a63e650c1728b0dfb",
+      "bytes": 171340,
+      "source": "assets/references/vermicelli.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "ce1bfbf761bb29b4395c2fcb1f696502d8e2142c75340f4a63e650c1728b0dfb"
+    },
+    {
+      "path": "assets/references/vermouth.jpg",
+      "sha256": "fa844a39a6debddfa7e5abf9781055005fa7353767934910064b04f381964c5b",
+      "bytes": 185010,
+      "source": "assets/references/vermouth.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "fa844a39a6debddfa7e5abf9781055005fa7353767934910064b04f381964c5b"
+    },
+    {
+      "path": "assets/references/vinegar.jpg",
+      "sha256": "ef7a17ca3a7c4dbfc1082f1dbf13a78d13cf3af89165cc6ce2eb3149999aa462",
+      "bytes": 203221,
+      "source": "assets/references/vinegar.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "ef7a17ca3a7c4dbfc1082f1dbf13a78d13cf3af89165cc6ce2eb3149999aa462"
+    },
+    {
+      "path": "assets/references/vodka.jpg",
+      "sha256": "312cf1f23953c1cf26c10fd2b2801b473c0abbcc284bad550fb99304ed977fc4",
+      "bytes": 55733,
+      "source": "assets/references/vodka.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "312cf1f23953c1cf26c10fd2b2801b473c0abbcc284bad550fb99304ed977fc4"
+    },
+    {
+      "path": "assets/references/waffle-maker.jpg",
+      "sha256": "9f06a4709ef5a5108a40ff8c57ff956cf9a9d04b229213db2a4ef6a3cfb862cd",
+      "bytes": 151515,
+      "source": "assets/references/waffle-maker.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "9f06a4709ef5a5108a40ff8c57ff956cf9a9d04b229213db2a4ef6a3cfb862cd"
+    },
+    {
+      "path": "assets/references/walnuts.jpg",
+      "sha256": "de6717fe912ed1569e2823484a2ca21c05a31c3e9ff1ab2e69dadd6ee87ac6e1",
+      "bytes": 84704,
+      "source": "assets/references/walnuts.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "de6717fe912ed1569e2823484a2ca21c05a31c3e9ff1ab2e69dadd6ee87ac6e1"
+    },
+    {
+      "path": "assets/references/whipped-cream.jpg",
+      "sha256": "7df958f8427ac1412e20fedf7434f66ef6d580a24310f95a1d40158315314c50",
+      "bytes": 62129,
+      "source": "assets/references/whipped-cream.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "7df958f8427ac1412e20fedf7434f66ef6d580a24310f95a1d40158315314c50"
+    },
+    {
+      "path": "assets/references/whisk.jpg",
+      "sha256": "f1d9e2d83d8ba3535194f04dd8ed883642568e157b6d9cbe9623d6a38947cad7",
+      "bytes": 69706,
+      "source": "assets/references/whisk.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "f1d9e2d83d8ba3535194f04dd8ed883642568e157b6d9cbe9623d6a38947cad7"
+    },
+    {
+      "path": "assets/references/white-onion.jpg",
+      "sha256": "22c480e345bc5df6a372c5ec0f1742a2040c42ca78400cc09f84def1130a90a9",
+      "bytes": 99830,
+      "source": "assets/references/white-onion.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "22c480e345bc5df6a372c5ec0f1742a2040c42ca78400cc09f84def1130a90a9"
+    },
+    {
+      "path": "assets/references/white-wine.jpg",
+      "sha256": "1850bfe83bf66acc89fac56746445bf419f20449f6006591aad2ba0203d9dbf1",
+      "bytes": 35417,
+      "source": "assets/references/white-wine.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "1850bfe83bf66acc89fac56746445bf419f20449f6006591aad2ba0203d9dbf1"
+    },
+    {
+      "path": "assets/references/wine-glass.jpg",
+      "sha256": "847db51047f49caddb16580b4bfa332af543588e9dd9705656da631b6fb8983d",
+      "bytes": 82990,
+      "source": "assets/references/wine-glass.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "847db51047f49caddb16580b4bfa332af543588e9dd9705656da631b6fb8983d"
+    },
+    {
+      "path": "assets/references/wine.jpg",
+      "sha256": "23dffcae0fb34775c294a85a043ce789f681e4a9e4f9b2f5f8bcbc58fa71238c",
+      "bytes": 66397,
+      "source": "assets/references/wine.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "23dffcae0fb34775c294a85a043ce789f681e4a9e4f9b2f5f8bcbc58fa71238c"
+    },
+    {
+      "path": "assets/references/wok.jpg",
+      "sha256": "335a4741e3d286753aafdbe73fda15de2af47e8436677e53cc5f6af4d7d4e69b",
+      "bytes": 98375,
+      "source": "assets/references/wok.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "335a4741e3d286753aafdbe73fda15de2af47e8436677e53cc5f6af4d7d4e69b"
+    },
+    {
+      "path": "assets/references/wooden-spoon.jpg",
+      "sha256": "a2f3897a0878729b90db1fe8d97237f0caa3a592aeef540b829713e00468447a",
+      "bytes": 30236,
+      "source": "assets/references/wooden-spoon.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "a2f3897a0878729b90db1fe8d97237f0caa3a592aeef540b829713e00468447a"
+    },
+    {
+      "path": "assets/references/worcestershire-sauce.jpg",
+      "sha256": "7c0f984b51d3678450a6b026dc2cdd7a23cc7ecf59a29ce03dc110ef1b297de7",
+      "bytes": 99574,
+      "source": "assets/references/worcestershire-sauce.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "7c0f984b51d3678450a6b026dc2cdd7a23cc7ecf59a29ce03dc110ef1b297de7"
+    },
+    {
+      "path": "assets/references/yeast.jpg",
+      "sha256": "c2c6f71ce575a266b619c122e192867745f3c3415bcf4af8c14d3a5d1cbc4b1e",
+      "bytes": 227776,
+      "source": "assets/references/yeast.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "c2c6f71ce575a266b619c122e192867745f3c3415bcf4af8c14d3a5d1cbc4b1e"
+    },
+    {
+      "path": "assets/references/yoghurt.jpg",
+      "sha256": "d5c631a13f198537feee61c36d5104430b07b84ef76c1fe7481b4ecc73531cc1",
+      "bytes": 102258,
+      "source": "assets/references/yoghurt.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "d5c631a13f198537feee61c36d5104430b07b84ef76c1fe7481b4ecc73531cc1"
+    },
+    {
+      "path": "assets/references/yukon-potato.jpg",
+      "sha256": "15a81e5afd16a4efbf8e52d480366add84bfee71d292df24fe09bdbbbede0ae9",
+      "bytes": 23243,
+      "source": "assets/references/yukon-potato.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "15a81e5afd16a4efbf8e52d480366add84bfee71d292df24fe09bdbbbede0ae9"
+    },
+    {
+      "path": "assets/references/za-atar.jpg",
+      "sha256": "dd77675b9886ccdac31dd3ff5cf3e9f8f802ed52b42bbc5efb98d85ef8335ecd",
+      "bytes": 196158,
+      "source": "assets/references/za-atar.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "dd77675b9886ccdac31dd3ff5cf3e9f8f802ed52b42bbc5efb98d85ef8335ecd"
+    },
+    {
+      "path": "assets/references/zester.jpg",
+      "sha256": "dc369bd4339264c505aca008939200d71a9e174ccc6e83dc8386e5b51c7580b8",
+      "bytes": 140198,
+      "source": "assets/references/zester.jpg",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "dc369bd4339264c505aca008939200d71a9e174ccc6e83dc8386e5b51c7580b8"
+    },
+    {
+      "path": "LICENSES/MIT.txt",
+      "sha256": "e334b493ca1900c7cbbb761fb9ee9ce36e3e401b408f344193e2ab845ba98aa1",
+      "bytes": 1095,
+      "source": "LICENSES/MIT.txt",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "e334b493ca1900c7cbbb761fb9ee9ce36e3e401b408f344193e2ab845ba98aa1"
+    },
+    {
+      "path": "LICENSES/CC0-1.0.txt",
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+      "bytes": 7048,
+      "source": "LICENSES/CC0-1.0.txt",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "path": "LICENSES/CC-BY-4.0.txt",
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411",
+      "bytes": 18657,
+      "source": "LICENSES/CC-BY-4.0.txt",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6",
+      "sourceHash": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
+    },
+    {
+      "path": "provenance/owned-fields.json",
+      "sha256": "0b04a705646fecc8326536c8186c7794dd26504f278c6cb3eb25b6523aed0188",
+      "bytes": 32166878,
+      "source": "Stage 1 field manifest; values held in candidate source data",
+      "sourceRevision": "bc6060a29223a2a52443ad62f5e566a2114ffcc6"
+    }
+  ]
+}

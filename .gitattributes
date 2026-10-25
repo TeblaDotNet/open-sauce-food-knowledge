@@ -1,0 +1,4 @@
+# Preserve imported evidence and licence/photo bytes on every checkout.
+assets/references/** -text
+provenance/core/** -text
+LICENSES/** -text
