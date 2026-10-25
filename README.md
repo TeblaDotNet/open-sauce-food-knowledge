@@ -1,6 +1,10 @@
 # Open Sauce Food Knowledge
 
-**Stage 4B: the sole editable source for Open Sauce Food editorial and quantitative knowledge. Sauce Code Core remains the sole canonical-vocabulary authority.**
+**Open Sauce Food — an open culinary encyclopaedia and recipe collection built using Sauce Code.**
+
+Knowledge is the default **optional** culinary provider, never an implicit parser dependency. Canonical identities can have an article, measurements, photographs, some combination or no enrichment.
+
+**Current ownership: the sole editable source for Open Sauce Food editorial and quantitative knowledge. Sauce Code Core remains the sole canonical-vocabulary authority.**
 This repository is not published or connected to GitHub. The intended future
 repository is `TeblaDotNet/open-sauce-food-knowledge`.
 
@@ -99,3 +103,15 @@ Set OSF_CORE to an explicit Core checkout and OSF_CORE_REVISION to its full curr
 Current data, taxonomy and photographs are authoritative here. Builds hash current active inputs; the initial extraction manifest remains immutable historical evidence rather than a lock on future edits. The initial-cutover parity tests deliberately retain historical expected values: future reviewed content changes must distinguish new editorial expectations from preserved extraction assertions. Canonical pins remain generated validation inputs, not independently edited vocabulary.
 
 The derived work/editorial-* test workspace is disposable and not an editorial source. Browsing labels/descriptions/memberships come from this provider. Original prose CC BY 4.0 applies only where necessary rights are held; existing uncertain rights and photograph licences remain unchanged.
+
+## Test families and future updates
+
+Current-content validation builds from data/, taxonomy/ and assets/: it checks targets, sources, review metadata, image rights fields and generated snapshots. Immutable migration parity verifies the original extraction against provenance/stage-0 and historical revisions. These are different purposes, even though pnpm test currently runs them together. The original 911/775/349 extraction counts are evidence, not permanent permitted encyclopaedia sizes.
+
+Full tests require Core Git objects including bc6060a29223a2a52443ad62f5e566a2114ffcc6 and cb5922c1c5239d2b126588c3098fc40d94adf9e9, retained Knowledge history (including f3122240ff4809e4a2ee6bc68fe178da259b592d), git archive, tar, Core node_modules and permission to create directory links (Windows junctions). OSF_STAGE0 can select an explicit frozen fixture; it is not a replacement for evidence checks. Corpus is optional to building a snapshot but required for the full editorial parity suite.
+
+The editorial adapter constructs work/editorial-* and frozen Stage 0 workspaces so unchanged Core-shaped test imports can exercise current provider data against historical APIs. These generated workspaces are not editable sources or runtime dependencies.
+
+**Known implementation limit:** tools/build.mjs currently requires exactly 349 photographs. Legitimate additions need a separately reviewed implementation/test change separating evolving inventory checks from immutable extraction parity. Do not delete the assertion, rewrite historical manifests or pretend this documentation removed that limit. For future content updates: retain frozen evidence, change current-content expectations with reviewed data, preserve targets/rights/review status, rebuild and run both test families.
+
+[Architecture/setup matrix](../core/docs/ecosystem.md) · [Contribution and AI-development disclosure](../core/CONTRIBUTING.md#development-process). Code test coverage does not establish human culinary review.

@@ -1,6 +1,6 @@
 # Licensing and attribution
 
-This is a migration candidate, not a blanket relicensing exercise. Original Core
+This is the current editorial source repository, not a blanket relicensing exercise. Original Core
 notices are preserved verbatim in [the source licensing archive](provenance/core/LICENSING.md).
 Copyright © 2026 Tebla and Open Sauce Food contributors, for their respective
 contributions and only the rights they hold.
