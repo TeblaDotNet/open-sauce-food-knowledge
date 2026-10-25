@@ -2,3 +2,5 @@
 assets/references/** -text
 provenance/core/** -text
 LICENSES/** -text
+# Snapshot/manifests are byte-pinned LF JSON, including on Windows.
+*.json text eol=lf

@@ -103,3 +103,13 @@ test('all 490 Corpus recipes preserve AST, diagnostics and Code/Compact/HTML',as
  const recipes=(await files(join(corpus,'examples'))).filter(f=>f.endsWith('.opensauce'));assert.equal(recipes.length,490);
  for(const filename of recipes){const text=await readFile(filename,'utf8');const a=api.parseRecipe(text,{filename,vocabulary:original}),b=api.parseRecipe(text,{filename,vocabulary:composed});assert.deepEqual(b,a,filename);assert.equal(b.diagnostics.filter(d=>d.severity==='error').length,0,filename);assert.equal(api.renderCode(b),api.renderCode(a));assert.equal(api.renderCompact(b,{vocabulary:composed}),api.renderCompact(a,{vocabulary:original}));for(const view of ['code','compact'])assert.equal(api.renderHtml(b,{view,vocabulary:composed}),api.renderHtml(a,{view,vocabulary:original}));}
 });
+
+test('clean Windows-style checkout preserves every manifest-pinned source byte',async()=>{
+ const dir=await mkdtemp(join(tmpdir(),'osf-knowledge-checkout-'));
+ execFileSync('git',['clone','--local','--no-hardlinks','--no-checkout',root,dir],{stdio:'pipe',windowsHide:true});
+ execFileSync('git',['-c','core.autocrlf=true','checkout','--detach','HEAD'],{cwd:dir,stdio:'pipe',windowsHide:true});
+ // Exercise the current attributes too while this regression is still uncommitted.
+ await writeFile(join(dir,'.git/info/attributes'),await readFile(join(root,'.gitattributes')));
+ execFileSync('git',['-c','core.autocrlf=true','checkout-index','--all','--prefix=export/'],{cwd:dir,stdio:'pipe',windowsHide:true});
+ await verifyFiles(join(dir,'export'),extraction.files);
+});
