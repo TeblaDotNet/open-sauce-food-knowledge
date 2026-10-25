@@ -89,3 +89,8 @@ honest review status. After cutover, regenerate the snapshot and review data dif
 never edit the generated canonical manifest to invent or rename a concept.
 
 See [migration and rollback](docs/migration.md) and [licensing findings](docs/rights.md).
+
+For later validated Core contracts, set OSF_CORE_REVISION to the exact 40-character
+commit of the supplied Core checkout. It must descend from Stage 1; the default
+remains the Stage 1 pin. This only selects implementation APIs, not live editorial
+data. Extraction provenance, canonical digest and candidate authority are unchanged.
