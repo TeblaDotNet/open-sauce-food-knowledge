@@ -9,7 +9,7 @@ contributions and only the rights they hold.
 | --- | --- |
 | New original `tools/` and `tests/` code, package/build configuration | [MIT](LICENSES/MIT.txt) |
 | New original README and documentation | [CC BY 4.0](LICENSES/CC-BY-4.0.txt) |
-| Original Open Sauce Food encyclopaedia prose where necessary rights are held | CC BY 4.0 direction; existing declarations retained where ownership is not individually established; see findings below |
+| Original Open Sauce Food encyclopaedia prose where necessary rights are held | [CC BY 4.0](LICENSES/CC-BY-4.0.txt) only for original prose with established project-held rights; uncertain prose has no additional project-granted reuse licence |
 | Project-owned structured data, selection/arrangement and generated canonical manifest | Existing [CC0 1.0](LICENSES/CC0-1.0.txt) scope, to the extent rights apply; copied evidence excepted |
 | Photographs and derivatives | Each photograph's own terms, unchanged; see [credits](assets/references/ATTRIBUTION.md) and [selection register](assets/references/selection.json) |
 | Imported/third-party text, source records, historical evidence and notices | Existing source-specific rights and attribution; not relicensed by this migration |
@@ -44,3 +44,11 @@ retain original scopes, context and relative references, which may refer to path
 in the original Core repository. They are not fresh claims about this new layout.
 Additional archived licence texts preserve historical notices; their presence does
 not impose a blanket licence on unrelated new tooling.
+
+## Determining the applicable prose scope
+
+An explicit, supported grant covering the particular article or block takes priority. Preserve existing valid grants. Original project prose with established rights may be reused under CC BY 4.0; third-party text retains its original applicable terms. If ownership or authority to grant rights is uncertain, this project grants no additional general reuse licence for that expression. Silence, a citation, review_version 0.1, or placement in JSON is not a clearance record.
+
+The current article records do not provide a comprehensive article/block clearance register. Readers should check the applicable source/provenance and any specific rights notice; if it does not establish the requested reuse, seek clarification rather than treating the whole registry as CC BY. This limitation does not withdraw an existing valid licence or restrict facts beyond rights actually held.
+
+Publication permission is a separate question: withholding a reuse grant does not authorize publication of protected third-party expression. Use the targeted risk-review process in [rights findings](docs/rights.md); do not infer clearance from a passing software test.

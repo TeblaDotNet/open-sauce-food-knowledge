@@ -115,3 +115,7 @@ The editorial adapter constructs work/editorial-* and frozen Stage 0 workspaces 
 **Known implementation limit:** tools/build.mjs currently requires exactly 349 photographs. Legitimate additions need a separately reviewed implementation/test change separating evolving inventory checks from immutable extraction parity. Do not delete the assertion, rewrite historical manifests or pretend this documentation removed that limit. For future content updates: retain frozen evidence, change current-content expectations with reviewed data, preserve targets/rights/review status, rebuild and run both test families.
 
 [Architecture/setup matrix](../core/docs/ecosystem.md) · [Contribution and AI-development disclosure](../core/CONTRIBUTING.md#development-process). Code test coverage does not establish human culinary review.
+
+## Prose reuse and publication
+
+Original editorial prose with established rights may be CC BY 4.0. Uncertain prose receives no additional project-granted general reuse licence; third-party terms and existing valid grants remain intact. No article-level clearance metadata is inferred. See [how to determine scope](LICENSING.md#determining-the-applicable-prose-scope). Permission to publish is separate from permission granted to downstream reusers.
