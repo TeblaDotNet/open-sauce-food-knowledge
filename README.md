@@ -1,21 +1,12 @@
 # Open Sauce Food Knowledge
 
-**Open Sauce Food — an open culinary encyclopaedia and recipe collection built using Sauce Code.**
+This repository holds the culinary reference material used by Open Sauce Food: articles, citations, photographs, browsing categories and measurements. It provides an optional offline knowledge source for Sauce Code applications.
 
-Knowledge is the default **optional** culinary provider, never an implicit parser dependency. Canonical identities can have an article, measurements, photographs, some combination or no enrichment.
+**Sauce Code defines the vocabulary; this repository adds information about its terms.** A canonical ingredient, tool or process may have an article, a photograph, measurements, or none of these. The absence of an article does not make the term invalid.
 
-**Current ownership: the sole editable source for Open Sauce Food editorial and quantitative knowledge. Sauce Code Core remains the sole canonical-vocabulary authority.**
-This repository is not published or connected to GitHub. The intended future
-repository is `TeblaDotNet/open-sauce-food-knowledge`.
+Knowledge is now the editable source for Open Sauce Food editorial and quantitative data. Core remains the authority for canonical IDs, names, aliases and language behaviour. This repository has no GitHub remote yet; its intended name is `TeblaDotNet/open-sauce-food-knowledge`.
 
-Open Sauce Food Knowledge holds optional culinary articles, sources, photographs,
-measurements and browsing information. Sauce Code owns grammar, canonical IDs,
-names, aliases, identity relationships and interpretation algorithms. A valid
-canonical concept does not require an article or this provider.
-
-The initial cutover preserves 911 draft articles, 775 sources, 349 photographs and one
-provisional, conversion-ineligible brown-sugar observation. No typical-mass,
-density or nutrition values were added. No reviews were promoted.
+At cutover, the collection contained 911 draft articles, 775 sources, 349 photographs and one provisional brown-sugar observation that cannot be used for conversions. Typical-mass, density and nutrition values are still unpopulated. Nothing was marked as human-reviewed.
 
 ## Layout
 
@@ -38,7 +29,7 @@ JSON follows the existing snapshot/registry shapes. Original YAML bytes remain i
 Images are neither recompressed nor renamed. [Attribution](assets/references/ATTRIBUTION.md)
 and [licensing](LICENSING.md) remain part of any redistribution.
 
-## Local build and tests
+## Build and test locally
 
 Use Node.js 24 or newer and a validated Stage 4B-or-later Core checkout with its
 existing development dependencies. No network requests are needed. Set OSF_CORE
@@ -49,8 +40,7 @@ Run node tools/build.mjs to build and pnpm test (or node tools/test.mjs) for the
 complete snapshot and migrated editorial suite. Set OSF_CORPUS and, for a later
 Corpus tooling commit, OSF_CORPUS_REVISION explicitly.
 
-Build reads only this repository's content and pinned Core implementation APIs.
-It never reads live Core articles, source registries or photographs. The tests also
+The build reads editorial data from this repository and uses Core only for its APIs. It does not read articles, citations or photographs from Core. The tests also
 use the frozen Stage 0/1 evidence in `provenance/stage-0/` and all 490
 recipes in sibling Corpus (or `OSF_CORPUS`), pinned to
 `921a7b27c6818aa1a25f5e2ce3b7c93ab715ced4`. A later explicitly pinned OSF_CORPUS_REVISION is allowed only with unchanged recipe/source payloads. Tests intentionally fail rather than
@@ -77,17 +67,14 @@ Run `node tools/source-check.mjs` from a clean tracked-source export. It checks 
 explicit inventory, source hashes, disallowed artifacts, paths and credential
 patterns. It deliberately does not silently filter a working directory.
 
-## Migration boundary and future contributions
+## Making changes
 
 `tests/compose.mjs` is a test adapter, not a production provider integration. It
 combines canonical entries with the snapshot and only the approved editorial
 compatibility fields. Core runtime defaults, CLI behaviour, Site URLs and editor
 ranking are unchanged. Site consumes the explicit provider through four-input integration.
 
-Contribute canonical identity changes to Core and editorial changes here. Changes must
-retain stable concept targets, source citations, image rights, uncertainty and
-honest review status. Regenerate the snapshot and review data diffs;
-never edit the generated canonical manifest to invent or rename a concept.
+Add or change canonical terms in Core; edit articles, measurements and media here. Keep references to canonical IDs stable, preserve source and image-rights records, and report uncertainty and review status accurately. Rebuild the snapshot and inspect the diff. Do not edit the generated canonical manifest.
 
 See [migration and rollback](docs/migration.md) and [licensing findings](docs/rights.md).
 
@@ -96,7 +83,7 @@ commit of the supplied Core checkout. It must descend from Stage 1; the default
 remains the Stage 1 pin. This only selects implementation APIs, not live editorial
 data. Extraction provenance and the canonical digest remain unchanged; editorial authority moved to Knowledge in Stage 4B.
 
-## Stage 4B test and editing workflow
+## Running the full editorial tests
 
 Set OSF_CORE to an explicit Core checkout and OSF_CORE_REVISION to its full current commit. Set OSF_CORPUS for the full recipe parity suite. Run pnpm test for snapshot/integrity tests plus all migrated editorial assertions. Core itself never discovers Knowledge. The tests reconstruct a frozen Stage 0 API/source fixture from retained local Git history and checksum-pinned provenance; they do not read active Core editorial files. No network is needed.
 
@@ -104,7 +91,7 @@ Current data, taxonomy and photographs are authoritative here. Builds hash curre
 
 The derived work/editorial-* test workspace is disposable and not an editorial source. Browsing labels/descriptions/memberships come from this provider. Original prose CC BY 4.0 applies only where necessary rights are held; existing uncertain rights and photograph licences remain unchanged.
 
-## Test families and future updates
+## Updating the knowledge collection
 
 Current-content validation builds from data/, taxonomy/ and assets/: it checks targets, sources, review metadata, image rights fields and generated snapshots. Immutable migration parity verifies the original extraction against provenance/stage-0 and historical revisions. These are different purposes, even though pnpm test currently runs them together. The original 911/775/349 extraction counts are evidence, not permanent permitted encyclopaedia sizes.
 
