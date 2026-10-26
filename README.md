@@ -6,6 +6,8 @@ This repository contains the reference material behind [Open Sauce Food](https:/
 
 The collection has more than 900 draft articles and 349 photographs. The articles haven't been systematically reviewed by people, and measurements for practical conversions are still largely unpopulated.
 
+**Related repositories:** [Sauce Code Core](https://github.com/TeblaDotNet/sauce-code) · [Recipes](https://github.com/TeblaDotNet/open-sauce-food-corpus)
+
 ## What's here
 
 | Path | Contents |
