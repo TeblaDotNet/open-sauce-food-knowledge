@@ -1,108 +1,40 @@
 # Open Sauce Food Knowledge
 
-This repository holds the culinary reference material used by Open Sauce Food: articles, citations, photographs, browsing categories and measurements. It provides an optional offline knowledge source for Sauce Code applications.
+This repository contains the reference material behind [Open Sauce Food](https://tebla.net/opensaucefood/): articles about ingredients, equipment and cooking processes, together with sources, photographs and browsing categories.
 
-**Sauce Code defines the vocabulary; this repository adds information about its terms.** A canonical ingredient, tool or process may have an article, a photograph, measurements, or none of these. The absence of an article does not make the term invalid.
+[Sauce Code](https://github.com/TeblaDotNet/sauce-code) supplies the shared vocabulary and recipe language. This repository adds information about those terms. A term can exist in Sauce Code without having an article here.
 
-Knowledge is now the editable source for Open Sauce Food editorial and quantitative data. Core remains the authority for canonical IDs, names, aliases and language behaviour. Its public repository is [TeblaDotNet/open-sauce-food-knowledge](https://github.com/TeblaDotNet/open-sauce-food-knowledge).
+The collection has more than 900 draft articles and 349 photographs. The articles haven't been systematically reviewed by people, and measurements for practical conversions are still largely unpopulated.
 
-At cutover, the collection contained 911 draft articles, 775 sources, 349 photographs and one provisional brown-sugar observation that cannot be used for conversions. Typical-mass, density and nutrition values are still unpopulated. Nothing was marked as human-reviewed.
+## What's here
 
-## Layout
+| Path | Contents |
+| --- | --- |
+| `data/enrichment.json` | Articles, relationships, review information and other editorial data |
+| `data/resources.json` | Article sources and references |
+| `data/quantities.json` | Quantitative observations (not yet populated for useful conversions) |
+| `taxonomy/categories.json` | Categories used for browsing |
+| `assets/references/` | Photographs, selections and attribution |
+| `provenance/` | Original source and migration records |
 
-- `data/enrichment.json`: existing enrichment records, with text, ordering, review,
-  resources, associations, image metadata and observations unchanged.
-- `data/resources.json`: the full source registry.
-- `data/quantities.json`: empty at this baseline; future values use Core contracts.
-- `data/compatibility.json`: Stage 1 typed field records for browsing memberships,
-  regional comparisons and part-group editorial fields in mixed canonical YAML.
-- `taxonomy/categories.json`: existing browsing taxonomy.
-- `assets/references/`: exact original photograph paths, attribution and selections.
-- `validation/`: generated, pinned canonical manifest and inventory, **not an
-  independently editable vocabulary**. Sauce Code remains its only authority.
-- `provenance/`: original source bytes, licensing/history and the extraction manifest.
-  These archives are evidence, not alternative editable registries.
-- `tools/`, `tests/`: offline build, extraction and test-only composition.
+The generated `validation/` data is for checking that articles point to real Sauce Code terms. It's not a second vocabulary to edit.
 
-JSON follows the existing snapshot/registry shapes. Original YAML bytes remain in
-`provenance/core/knowledge/`; conversion preserves values and order, not YAML layout.
-Images are neither recompressed nor renamed. [Attribution](assets/references/ATTRIBUTION.md)
-and [licensing](LICENSING.md) remain part of any redistribution.
+## Building the knowledge files
 
-## Build and test locally
+The build produces an offline snapshot that applications can use alongside Sauce Code.
 
-Use Node.js 24 or newer and a validated Stage 4B-or-later Core checkout with its
-existing development dependencies. No network requests are needed. Set OSF_CORE
-to that checkout and OSF_CORE_REVISION to its exact full commit hash. The old
-Stage 1 default is retained for extraction history, not current build/test use.
+You'll need Node.js 24+, pnpm and a local Sauce Code Core checkout with its development dependencies. Set `OSF_CORE` to that checkout and `OSF_CORE_REVISION` to the exact commit being used, then run:
 
-Run node tools/build.mjs to build and pnpm test (or node tools/test.mjs) for the
-complete snapshot and migrated editorial suite. Set OSF_CORPUS and, for a later
-Corpus tooling commit, OSF_CORPUS_REVISION explicitly.
+```sh
+node tools/build.mjs
+```
 
-The build reads editorial data from this repository and uses Core only for its APIs. It does not read articles, citations or photographs from Core. The tests also
-use the frozen Stage 0/1 evidence in `provenance/stage-0/` and all 490
-recipes in sibling Corpus (or `OSF_CORPUS`), pinned to
-`921a7b27c6818aa1a25f5e2ce3b7c93ab715ced4`. A later explicitly pinned OSF_CORPUS_REVISION is allowed only with unchanged recipe/source payloads. Tests intentionally fail rather than
-silently skip when these migration inputs are absent.
+The output is in `dist/`. To run the full test suite, you'll also need the historical test inputs and a Corpus checkout described in [testing and migration notes](docs/testing-and-migration.md).
 
-`dist/snapshot.json` implements Core's schema-version-1 offline contract. Provider
-version is `0.1.0-stage-2`. Its `sourceRevision` is a SHA-256 content revision of
-ordered input paths/hashes, avoiding a self-referential Git commit in generated
-data. `provenance/extraction.json` records exact original Core and contract commits;
-the delivery receipt also records this repository's commit.
+## Contributing
 
-`dist/compatibility.json` and `dist/taxonomy.json` accompany the snapshot because
-Stage 1's minimal contract does not carry those dimensions. `dist/media.json`
-resolves every hero to an exact asset path/hash and its original licence metadata.
-Distribute `assets/` with the JSON bundle; photograph bytes are not embedded.
-`dist/manifest.json` hashes every generated component. Dist is ignored and rebuildable.
+Article text, photographs and measurements belong here. New shared terms and aliases belong in [Sauce Code Core](https://github.com/TeblaDotNet/sauce-code). Keep article references stable, record sources and image credits, and be clear about what has and hasn't been checked.
 
-For extraction reproduction, `tools/extract.mjs` uses the pinned Core and Stage 1
-evidence, refusing to overwrite an existing `data/` directory. Use a fresh checkout
-of the tooling with no extracted data, never delete the current candidate just to
-rerun it. Core sources are read-only throughout.
+**Licensing varies by material.** Photographs have individual licences, and some article prose has unresolved rights. The repository is not entirely CC BY 4.0. Please read [licensing](LICENSING.md) and [rights notes](docs/rights.md) before reusing content or contributing it.
 
-Run `node tools/source-check.mjs` from a clean tracked-source export. It checks the
-explicit inventory, source hashes, disallowed artifacts, paths and credential
-patterns. It deliberately does not silently filter a working directory.
-
-## Making changes
-
-`tests/compose.mjs` is a test adapter, not a production provider integration. It
-combines canonical entries with the snapshot and only the approved editorial
-compatibility fields. Core runtime defaults, CLI behaviour, Site URLs and editor
-ranking are unchanged. Site consumes the explicit provider through four-input integration.
-
-Add or change canonical terms in Core; edit articles, measurements and media here. Keep references to canonical IDs stable, preserve source and image-rights records, and report uncertainty and review status accurately. Rebuild the snapshot and inspect the diff. Do not edit the generated canonical manifest.
-
-See [migration and rollback](docs/migration.md) and [licensing findings](docs/rights.md).
-
-For later validated Core contracts, set OSF_CORE_REVISION to the exact 40-character
-commit of the supplied Core checkout. It must descend from Stage 1; the default
-remains the Stage 1 pin. This only selects implementation APIs, not live editorial
-data. Extraction provenance and the canonical digest remain unchanged; editorial authority moved to Knowledge in Stage 4B.
-
-## Running the full editorial tests
-
-Set OSF_CORE to an explicit Core checkout and OSF_CORE_REVISION to its full current commit. Set OSF_CORPUS for the full recipe parity suite. Run pnpm test for snapshot/integrity tests plus all migrated editorial assertions. Core itself never discovers Knowledge. The tests reconstruct a frozen Stage 0 API/source fixture from retained local Git history and checksum-pinned provenance; they do not read active Core editorial files. No network is needed.
-
-Current data, taxonomy and photographs are authoritative here. Builds hash current active inputs; the initial extraction manifest remains immutable historical evidence rather than a lock on future edits. The initial-cutover parity tests deliberately retain historical expected values: future reviewed content changes must distinguish new editorial expectations from preserved extraction assertions. Canonical pins remain generated validation inputs, not independently edited vocabulary.
-
-The derived work/editorial-* test workspace is disposable and not an editorial source. Browsing labels/descriptions/memberships come from this provider. Original prose CC BY 4.0 applies only where necessary rights are held; existing uncertain rights and photograph licences remain unchanged.
-
-## Updating the knowledge collection
-
-Current-content validation builds from data/, taxonomy/ and assets/: it checks targets, sources, review metadata, image rights fields and generated snapshots. Immutable migration parity verifies the original extraction against provenance/stage-0 and historical revisions. These are different purposes, even though pnpm test currently runs them together. The original 911/775/349 extraction counts are evidence, not permanent permitted encyclopaedia sizes.
-
-Full tests require Core Git objects including bc6060a29223a2a52443ad62f5e566a2114ffcc6 and cb5922c1c5239d2b126588c3098fc40d94adf9e9, retained Knowledge history (including f3122240ff4809e4a2ee6bc68fe178da259b592d), git archive, tar, Core node_modules and permission to create directory links (Windows junctions). OSF_STAGE0 can select an explicit frozen fixture; it is not a replacement for evidence checks. Corpus is optional to building a snapshot but required for the full editorial parity suite.
-
-The editorial adapter constructs work/editorial-* and frozen Stage 0 workspaces so unchanged Core-shaped test imports can exercise current provider data against historical APIs. These generated workspaces are not editable sources or runtime dependencies.
-
-**Known implementation limit:** tools/build.mjs currently requires exactly 349 photographs. Legitimate additions need a separately reviewed implementation/test change separating evolving inventory checks from immutable extraction parity. Do not delete the assertion, rewrite historical manifests or pretend this documentation removed that limit. For future content updates: retain frozen evidence, change current-content expectations with reviewed data, preserve targets/rights/review status, rebuild and run both test families.
-
-[Architecture/setup matrix](https://github.com/TeblaDotNet/sauce-code/blob/main/docs/ecosystem.md) · [Contribution and AI-development disclosure](https://github.com/TeblaDotNet/sauce-code/blob/main/CONTRIBUTING.md#development-process). Code test coverage does not establish human culinary review.
-
-## Prose reuse and publication
-
-Original editorial prose with established rights may be CC BY 4.0. Uncertain prose receives no additional project-granted general reuse licence; third-party terms and existing valid grants remain intact. No article-level clearance metadata is inferred. See [how to determine scope](LICENSING.md#determining-the-applicable-prose-scope). Permission to publish is separate from permission granted to downstream reusers.
+For the development history and older parity tests, see [testing and migration](docs/testing-and-migration.md).
