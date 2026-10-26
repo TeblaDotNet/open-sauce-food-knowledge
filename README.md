@@ -4,7 +4,7 @@ This repository holds the culinary reference material used by Open Sauce Food: a
 
 **Sauce Code defines the vocabulary; this repository adds information about its terms.** A canonical ingredient, tool or process may have an article, a photograph, measurements, or none of these. The absence of an article does not make the term invalid.
 
-Knowledge is now the editable source for Open Sauce Food editorial and quantitative data. Core remains the authority for canonical IDs, names, aliases and language behaviour. This repository has no GitHub remote yet; its intended name is `TeblaDotNet/open-sauce-food-knowledge`.
+Knowledge is now the editable source for Open Sauce Food editorial and quantitative data. Core remains the authority for canonical IDs, names, aliases and language behaviour. Its public repository is [TeblaDotNet/open-sauce-food-knowledge](https://github.com/TeblaDotNet/open-sauce-food-knowledge).
 
 At cutover, the collection contained 911 draft articles, 775 sources, 349 photographs and one provisional brown-sugar observation that cannot be used for conversions. Typical-mass, density and nutrition values are still unpopulated. Nothing was marked as human-reviewed.
 
@@ -101,7 +101,7 @@ The editorial adapter constructs work/editorial-* and frozen Stage 0 workspaces 
 
 **Known implementation limit:** tools/build.mjs currently requires exactly 349 photographs. Legitimate additions need a separately reviewed implementation/test change separating evolving inventory checks from immutable extraction parity. Do not delete the assertion, rewrite historical manifests or pretend this documentation removed that limit. For future content updates: retain frozen evidence, change current-content expectations with reviewed data, preserve targets/rights/review status, rebuild and run both test families.
 
-[Architecture/setup matrix](../core/docs/ecosystem.md) · [Contribution and AI-development disclosure](../core/CONTRIBUTING.md#development-process). Code test coverage does not establish human culinary review.
+[Architecture/setup matrix](https://github.com/TeblaDotNet/sauce-code/blob/main/docs/ecosystem.md) · [Contribution and AI-development disclosure](https://github.com/TeblaDotNet/sauce-code/blob/main/CONTRIBUTING.md#development-process). Code test coverage does not establish human culinary review.
 
 ## Prose reuse and publication
 

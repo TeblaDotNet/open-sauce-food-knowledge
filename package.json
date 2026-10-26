@@ -13,5 +13,13 @@
     "source:check": "node tools/source-check.mjs",
     "test:snapshot": "node --test tests/*.test.mjs",
     "test:editorial": "node tools/editorial-tests.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TeblaDotNet/open-sauce-food-knowledge.git"
+  },
+  "homepage": "https://github.com/TeblaDotNet/open-sauce-food-knowledge#readme",
+  "bugs": {
+    "url": "https://github.com/TeblaDotNet/open-sauce-food-knowledge/issues"
   }
 }
